@@ -454,7 +454,7 @@
   <span class="md-ellipsis">
     
   
-  User API
+  User documentation
 
     
   </span>
@@ -469,7 +469,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-  User API
+  User documentation
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -515,7 +515,7 @@
   <span class="md-ellipsis">
     
   
-  Toolkit API
+  Toolkit documentation
 
     
   </span>
@@ -743,37 +743,42 @@
                   
 
 <p><a href="https://github.com/cwindolf/dartsort/actions/"><img alt="ci" src="https://github.com/cwindolf/dartsort/actions/workflows/ci.yml/badge.svg?branch=main" /></a>
+<a href="https://github.com/cwindolf/dartsort/"><img alt="github" src="https://img.shields.io/badge/github-repo-blue?logo=github" /></a>
+<a href="https://dartsort.github.io"><img alt="docs" src="https://img.shields.io/badge/documentation-AAAAAA" /></a>
+<a href="https://github.com/dartsort/dartsort.github.io/actions/workflows/pages/pages-build-deployment"><img alt="pages" src="https://github.com/dartsort/dartsort.github.io/actions/workflows/pages/pages-build-deployment/badge.svg" /></a>
 <a href="https://coveralls.io/github/cwindolf/dartsort"><img alt="coveralls" src="https://coveralls.io/repos/github/cwindolf/dartsort/badge.svg?branch=main" /></a>
 <a href="https://doi.org/10.5281/zenodo.16943074"><img alt="Zenodo DOI" src="https://zenodo.org/badge/421108722.svg" /></a>
 <a href="https://pypi.org/p/dartsort"><img alt="pypi: dartsort" src="https://img.shields.io/pypi/v/dartsort?label=pypi:%20dartsort" /></a></p>
 <h1 id="dartsort">dartsort<a class="headerlink" href="#dartsort" title="Permanent link">&para;</a></h1>
 <p><em>dartsort</em> is a modular spike sorter built around a statistical clustering model and a new approach to probe motion.
-It is also a toolkit of modules for building spike sorters or other analyses of electrophysiology data.</p>
+It is also a toolkit of modules for building spike sorters and other analyses of electrophysiology data.</p>
 <h2 id="work-in-progress"><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a0.svg" title=":warning:" /> work in progress <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a0.svg" title=":warning:" /><a class="headerlink" href="#work-in-progress" title="Permanent link">&para;</a></h2>
 <p>We do not currently recommend DARTsort for production spike sorting purposes.
 Please feel free to open an issue or a discussion if you run into problems.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
 <h3 id="installing-into-an-existing-environment">Installing into an existing environment<a class="headerlink" href="#installing-into-an-existing-environment" title="Permanent link">&para;</a></h3>
-<p>If you already have a Python environment with PyTorch working and you just want to get <em>dartsort</em> there, use</p>
+<p>If you already have a Python environment with PyTorch working and you just want to install <em>dartsort</em> there, use</p>
 <div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>dartsort
 </span></code></pre></div>
 <p>If you want to run the test suite or use <code>dartsort.vis</code>, you can install the optional dependencies with <code>pip install dartsort[test,vis]</code>.</p>
 <h2 id="setting-up-a-python-environment">Setting up a Python environment<a class="headerlink" href="#setting-up-a-python-environment" title="Permanent link">&para;</a></h2>
-<p>Otherwise, there are a few ways to get Python and PyTorch set up, including new tools like <code>uv</code>, but I find that a <a href="https://conda-forge.org/"><code>conda-forge</code></a>-based distribution is still the most reliable at installing the GPU dependencies which PyTorch needs (note: <code>conda-forge</code> is different from the non-free Anaconda).</p>
-<p>You can use <code>conda-forge</code> to install Python, <code>dartsort</code>, and its dependencies as follows:
-  - Follow the <code>conda-forge</code> installation instructions for your platform at <a href="https://conda-forge.org/download/">https://conda-forge.org/download/</a>
-  - Create an environment with
+<p>If you need to set up Python or PyTorch, I find that a <a href="https://conda-forge.org/"><code>conda-forge</code></a>-based distribution is the most reliable at installing the GPU dependencies which PyTorch needs (note: <code>conda-forge</code> is different from the non-free Anaconda).</p>
+<p>You can use <code>conda-forge</code> to install Python, <code>dartsort</code>, and its dependencies as follows:</p>
+<ul>
+<li>Follow the <code>conda-forge</code> installation instructions for your platform at <a href="https://conda-forge.org/download/">https://conda-forge.org/download/</a></li>
+<li>Create an environment with
     <div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$<span class="w"> </span>mamba<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yml
 </span></code></pre></div>
-    This will create an environment called <code>dartsort</code>, but you can change the name by adding <code>-n othername</code>.
-  - Activate the environment:
+    This will create an environment called <code>dartsort</code>, but you can change the name by adding <code>-n othername</code>.</li>
+<li>Activate the environment:
     <div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$<span class="w"> </span>mamba<span class="w"> </span>activate<span class="w"> </span>dartsort
-</span></code></pre></div>
-  - Install <code>dartsort</code> and the rest of its dependencies by running the pip command <a href="#installing-into-an-existing-environment">above</a></p>
+</span></code></pre></div></li>
+<li>Install <code>dartsort</code> and the rest of its dependencies by running the pip command <a href="#installing-into-an-existing-environment">above</a></li>
+</ul>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>Main usage reference page: <a href="main_api/">main API documentation</a>.</p>
+<p>For more detailed documentation of the main function parameters and configuration options, see the <a href="main_api/">main API documentation</a>.</p>
 <h3 id="as-a-python-function">As a Python function<a class="headerlink" href="#as-a-python-function" title="Permanent link">&para;</a></h3>
-<p><em>dartsort</em> can be run from inside Python with:</p>
+<p><em>dartsort</em> can be run in Python with:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">dartsort</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">dartsort</span><span class="o">.</span><span class="n">dartsort</span><span class="p">(</span><span class="n">recording</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">)</span>
@@ -789,32 +794,35 @@ Please feel free to open an issue or a discussion if you run into problems.</p>
 </span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    <span class="p">),</span>
 </span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="p">)</span>
 </span></code></pre></div>
-<p><strong>Please</strong> read the <a href="#important-configuration-details">important configuration details section</a> below.
-Some of them, like preprocessing, are not set by default and need your input! (This could change.)</p>
-<p>Here, <code>recording</code> is a <a href="https://spikeinterface.readthedocs.io">SpikeInterface</a> recording object.
-SpikeInterface can read every electrophysiology data format that I've encountered and many I haven't. <code>output_dir</code> is the folder where <em>dartsort</em> will save its output.</p>
-<p>For more details on these arguments, see the <a href="main_api/">main API documentation</a>.</p>
+<p><strong>Please</strong> read the <a href="#important-configuration-details">important configuration details section</a> below for information on the parameters of the <code>DARTsortUserConfig</code>.
+Some of them, like <code>preprocessing</code>, are not set by default and need your input!
+(This will probably change.)</p>
+<p>Here, <code>recording</code> is a <a href="https://spikeinterface.readthedocs.io">SpikeInterface</a> recording object (see their tutorial on <a href="https://spikeinterface.readthedocs.io/en/stable/how_to/read_various_formats.html">reading various recording formats</a>).
+<code>output_dir</code> is the folder where <em>dartsort</em> will save its output.
+There are more details on these and the rest of the arguments in the <a href="main_api/">main API documentation</a>.</p>
 <p>Once you've run <em>dartsort</em>, you might want to check out <a href="#outputs-and-exporting">the outputs and exporting</a> section below.</p>
 <h3 id="important-configuration-details">Important configuration details<a class="headerlink" href="#important-configuration-details" title="Permanent link">&para;</a></h3>
 <p>Before running <em>dartsort</em>, please be aware of the following important configuration options.</p>
 <ul>
-<li><code>preprocessing</code>: <em>dartsort</em> won't touch your data by default (<code>preprocessing="none"</code>), leaving you free to implement your own preprocessing in SpikeInterface or otherwise, and therefore <em>dartsort</em> will explode if you don't set this flag and leave your data in its original raw state (for instance, the raw <code>int16</code> data off the probe).<ul>
+<li><code>preprocessing</code>: <em>dartsort</em> won't touch your data by default (<code>preprocessing="none"</code>), leaving you free to implement your own preprocessing in SpikeInterface or otherwise. However, <em>dartsort</em> expects standardized input, and therefore it will explode if you don't set this flag and your data is in its original state (for instance, the raw <code>int16</code> data off the probe).<ul>
 <li>For a cheap but sensible default, try <code>preprocessing="ibllikecmr"</code>, which applies a pipeline similar to that of <a href="https://figshare.com/articles/online_resource/Spike_sorting_pipeline_for_the_International_Brain_Laboratory/19705522">the IBL</a> but with global median common referencing instead of their spatial highpass filter. <code>preprocessing="ibllike"</code> will use their spatial highpass filter.</li>
 </ul>
 </li>
-<li><code>do_motion_estimation=True</code> by default, and you may like to disable it if you know for a fact that there is (say) less than 5 microns of total drift in your recording, or if you have handled this in your own preprocessing (which is discouraged, since <em>dartsort</em> has its own approach.)</li>
+<li><code>do_motion_estimation=True</code> by default, but you may like to disable it if you know that there is (say) less than 5 microns of total drift in your recording, or if you have handled this in your own preprocessing.</li>
 <li><code>work_in_tmpdir</code> and <code>copy_recording_to_tmpdir</code> can be helpful in some cases where slow network drives are involved.</li>
 </ul>
 <h3 id="outputs-and-exporting">Outputs and exporting<a class="headerlink" href="#outputs-and-exporting" title="Permanent link">&para;</a></h3>
-<p>The <code>dartsort_result = dartsort(...)</code> function returns a dictionary <code>dartsort_result</code> containing a <code>DARTsortSorting</code> object under the key <code>sorting = dartsort_result["sorting"]</code>.
+<p>The <code>dartsort_result = dartsort(...)</code> function returns a dictionary <code>dartsort_result</code> containing a <code>DARTsortSorting</code> object: <code>sorting = dartsort_result["sorting"]</code>.
 This object has all the spike train data attached (as arrays under property names <code>.times_samples</code> and <code>.times_seconds</code> for spike times in samples and seconds, <code>.labels</code> for unit labels, and many others; <code>print(sorting)</code> to see some more).</p>
 <p>If you already ran <em>dartsort</em> and want to load the output spike trains, use <code>dartsort.load(output_dir)</code> to get the <code>DARTsortSorting</code> object.</p>
-<p>This object can also export itself to other formats:
- - For a SpikeInterface <code>NumpySorting</code> object, use <code>sorting.to_numpy_sorting()</code>
- - For a <a href="https://pynapple.org/">Pynapple</a> <code>TsGroup</code>, use <code>sorting.to_tsgroup()</code>
- - To export to Phy, we currently suggest bridging through SpikeInterface. Start with <code>sorting.to_numpy_sorting()</code> and follow the instructions <a href="https://spikeinterface.readthedocs.io/en/stable/modules/exporters.html#exporting-to-phy">in SpikeInterface's documentation</a> for first creating a <code>SortingAnalyzer</code> and then exporting that to Phy.
- - For a simple dictionary of numpy arrays, use <code>dict = sorting.spike_feature_dict</code>.
- - For pandas, use <code>sorting.to_pandas()</code>.</p>
+<p>This object can also export itself to other formats:</p>
+<ul>
+<li>For a SpikeInterface <code>NumpySorting</code> object, use <code>sorting.to_numpy_sorting()</code></li>
+<li>For a <a href="https://pynapple.org/">Pynapple</a> <code>TsGroup</code>, use <code>sorting.to_tsgroup()</code></li>
+<li>To export to Phy, we currently suggest bridging through SpikeInterface. Start with <code>sorting.to_numpy_sorting()</code> and follow the instructions <a href="https://spikeinterface.readthedocs.io/en/stable/modules/exporters.html#exporting-to-phy">in SpikeInterface's documentation</a> for first creating a <code>SortingAnalyzer</code> and then exporting that to Phy.</li>
+<li>For a simple dictionary of numpy arrays, use <code>dict = sorting.spike_feature_dict</code>.</li>
+<li>For pandas, use <code>sorting.to_pandas()</code>.</li>
+</ul>
 <p><em>dartsort</em> also saves motion information, returned as <code>dartsort_result["motion"]</code> or loaded after the fact as <code>dartsort.try_load_motion_info(output_dir)</code>.</p>
 <p>The data is saved to <code>output_dir</code> in the following files:
  - <code>dartsort_sorting.npz</code>: This NPZ file contains the final spike train under the keys <code>times_samples</code>, <code>channels</code>, and <code>labels</code>.
