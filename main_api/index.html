@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.0.42">
+      <meta name="generator" content="zensical-0.0.43">
     
     
       
@@ -376,10 +376,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#dartsort.DARTsortReturn" class="md-nav__link">
+  <a href="#dartsort.DARTsortResult" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        DARTsortReturn
+        DARTsortResult
       </span>
     </span>
   </a>
@@ -565,10 +565,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#dartsort.DARTsortReturn" class="md-nav__link">
+  <a href="#dartsort.DARTsortResult" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        DARTsortReturn
+        DARTsortResult
       </span>
     </span>
   </a>
@@ -741,7 +741,7 @@ If you're just getting started, the <a href="/#usage">usage section on the front
 
     <div class="doc doc-contents first">
 
-        <p>This function runs a spike sorter called dartsort.</p>
+        <p>This function runs a spike sorter called <em>dartsort</em>.</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
@@ -764,7 +764,7 @@ If you're just getting started, the <a href="/#usage">usage section on the front
             </td>
             <td>
               <div class="doc-md-description">
-                <p>A SpikeInterface <code>BaseRecording</code> object</p>
+                <p>A SpikeInterface <code>BaseRecording</code></p>
               </div>
             </td>
             <td>
@@ -780,7 +780,9 @@ If you're just getting started, the <a href="/#usage">usage section on the front
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Folder where outputs are stored</p>
+                <p>Folder where outputs are stored. See the <code>work_in_tmpdir</code> and <code>tmpdir_parent</code>
+configuration options to store intermediate data in a scratch folder and
+then only save the final outputs here.</p>
               </div>
             </td>
             <td>
@@ -813,7 +815,9 @@ you can pass a string or Path pointing to a .toml file here.</p>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Allows users to pass their own external motion estimate.</p>
+                <p>Allows users to pass their own external motion estimate. If this is given,
+the do_motion_estimation configuration flag is ignored and this object is
+used.</p>
               </div>
             </td>
             <td>
@@ -829,7 +833,7 @@ you can pass a string or Path pointing to a .toml file here.</p>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Allows users to pass their own external motion estimate.</p>
+                <p>As in <code>si_motion</code>.</p>
               </div>
             </td>
             <td>
@@ -869,7 +873,7 @@ it will do nothing.</p>
       <tbody>
           <tr class="doc-section-item">
 <td><code>results</code></td>            <td>
-                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.DARTsortReturn&lt;/span&gt;" href="./#dartsort.DARTsortReturn">DARTsortReturn</a></code>
+                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.DARTsortResult&lt;/span&gt;" href="./#dartsort.DARTsortResult">DARTsortResult</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -888,25 +892,25 @@ it will do nothing.</p>
 
     </div>
 
-</div><p>The return value from the <code>dartsort()</code> function is a DARTsortReturn object, which is a dictionary containing spike trains and motion information:</p>
+</div><p>The return value from the <code>dartsort()</code> function is a <code>DARTsortResult</code> object, which is a dictionary containing spike trains and motion information:</p>
 
 
 <div class="doc doc-object doc-class">
 
 
 
-<h3 id="dartsort.DARTsortReturn" class="doc doc-heading">
-            <span class="doc doc-object-name doc-class-name">dartsort.DARTsortReturn</span>
+<h3 id="dartsort.DARTsortResult" class="doc doc-heading">
+            <span class="doc doc-object-name doc-class-name">dartsort.DARTsortResult</span>
 
 
-<a href="#dartsort.DARTsortReturn" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#dartsort.DARTsortResult" class="headerlink" title="Permanent link">&para;</a></h3>
 
 
     <div class="doc doc-contents first">
 
 
 
-          <backlinks identifier="dartsort.DARTsortReturn" handler="python" />
+          <backlinks identifier="dartsort.DARTsortResult" handler="python" />
 
 
 
@@ -929,7 +933,7 @@ it will do nothing.</p>
 
 
 
-<h4 id="dartsort.DARTsortReturn.sorting" class="doc doc-heading">
+<h4 id="dartsort.DARTsortResult.sorting" class="doc doc-heading">
             <span class="doc doc-object-name doc-attribute-name">sorting</span>
 
 
@@ -937,7 +941,7 @@ it will do nothing.</p>
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
-<a href="#dartsort.DARTsortReturn.sorting" class="headerlink" title="Permanent link">&para;</a></h4>
+<a href="#dartsort.DARTsortResult.sorting" class="headerlink" title="Permanent link">&para;</a></h4>
 <div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">sorting</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.DARTsortSorting&lt;/span&gt;" href="./#dartsort.DARTsortSorting">DARTsortSorting</a></span>
 </span></code></pre></div>
 
@@ -945,7 +949,7 @@ it will do nothing.</p>
 
         <p>Output spike trains.</p>
 
-          <backlinks identifier="dartsort.DARTsortReturn.sorting" handler="python" />
+          <backlinks identifier="dartsort.DARTsortResult.sorting" handler="python" />
     </div>
 
 </div>
@@ -954,7 +958,7 @@ it will do nothing.</p>
 
 
 
-<h4 id="dartsort.DARTsortReturn.motion" class="doc doc-heading">
+<h4 id="dartsort.DARTsortResult.motion" class="doc doc-heading">
             <span class="doc doc-object-name doc-attribute-name">motion</span>
 
 
@@ -962,7 +966,7 @@ it will do nothing.</p>
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
-<a href="#dartsort.DARTsortReturn.motion" class="headerlink" title="Permanent link">&para;</a></h4>
+<a href="#dartsort.DARTsortResult.motion" class="headerlink" title="Permanent link">&para;</a></h4>
 <div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">motion</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.MotionInfo&lt;/span&gt;" href="./#dartsort.MotionInfo">MotionInfo</a></span>
 </span></code></pre></div>
 
@@ -970,7 +974,7 @@ it will do nothing.</p>
 
         <p>Esimated motion</p>
 
-          <backlinks identifier="dartsort.DARTsortReturn.motion" handler="python" />
+          <backlinks identifier="dartsort.DARTsortResult.motion" handler="python" />
     </div>
 
 </div>
