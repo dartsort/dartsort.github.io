@@ -1155,6 +1155,8 @@ These are in sections below.</p>
 
 
 
+        <p>Template matching pursuit parameters</p>
+
           <backlinks identifier="dartsort.MatchingConfig" handler="python" />
 
 
@@ -1802,6 +1804,30 @@ These are in sections below.</p>
 
 
 
+<h4 id="dartsort.MatchingConfig.scale_adjusts_threshold" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">scale_adjusts_threshold</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+<a href="#dartsort.MatchingConfig.scale_adjusts_threshold" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">scale_adjusts_threshold</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+          <backlinks identifier="dartsort.MatchingConfig.scale_adjusts_threshold" handler="python" />
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
 <h4 id="dartsort.MatchingConfig.min_template_ptp" class="doc doc-heading">
             <span class="doc doc-object-name doc-attribute-name">min_template_ptp</span>
 
@@ -2082,7 +2108,7 @@ These are in sections below.</p>
 
 
 <a href="#dartsort.subtract" class="headerlink" title="Permanent link">&para;</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">subtract</span><span class="p">(</span><span class="n">output_dir</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></span><span class="p">,</span> <span class="n">recording</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="spikeinterface.core.BaseRecording" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.BaseRecording">BaseRecording</a></span><span class="p">,</span> <span class="n">waveform_cfg</span><span class="p">:</span> <span class="n"><span title="dartsort.util.internal_config.WaveformConfig">WaveformConfig</span></span> <span class="o">=</span> <span class="n"><span title="dartsort.util.internal_config.default_waveform_cfg">default_waveform_cfg</span></span><span class="p">,</span> <span class="n">featurization_cfg</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.FeaturizationConfig&lt;/span&gt;" href="./#dartsort.FeaturizationConfig">FeaturizationConfig</a></span> <span class="o">=</span> <span class="n"><span title="dartsort.util.internal_config.default_featurization_cfg">default_featurization_cfg</span></span><span class="p">,</span> <span class="n">subtraction_cfg</span><span class="o">=</span><span class="n"><span title="dartsort.util.internal_config.default_subtraction_cfg">default_subtraction_cfg</span></span><span class="p">,</span> <span class="n">sampling_cfg</span><span class="p">:</span> <span class="n"><span title="dartsort.util.internal_config.FitSamplingConfig">FitSamplingConfig</span></span> <span class="o">=</span> <span class="n"><span title="dartsort.util.internal_config.default_peeling_fit_sampling_cfg">default_peeling_fit_sampling_cfg</span></span><span class="p">,</span> <span class="n">computation_cfg</span><span class="p">:</span> <span class="n"><span title="dartsort.util.internal_config.ComputationConfig">ComputationConfig</span></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">chunk_starts_samples</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">stop_after_n_spikes</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">ensure_coverage</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">residual_filename</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">shuffle</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">show_progress</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">hdf5_filename</span><span class="o">=</span><span class="s1">&#39;subtraction.h5&#39;</span><span class="p">,</span> <span class="n">model_subdir</span><span class="o">=</span><span class="s1">&#39;subtraction_models&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.DARTsortSorting&lt;/span&gt;" href="../main_api/#dartsort.DARTsortSorting">DARTsortSorting</a></span> <span class="o">|</span> <span class="kc">None</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">subtract</span><span class="p">(</span><span class="n">output_dir</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></span><span class="p">,</span> <span class="n">recording</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="spikeinterface.core.BaseRecording" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.BaseRecording">BaseRecording</a></span><span class="p">,</span> <span class="n">waveform_cfg</span><span class="p">:</span> <span class="n"><span title="dartsort.util.internal_config.WaveformConfig">WaveformConfig</span></span> <span class="o">=</span> <span class="n"><span title="dartsort.util.internal_config.default_waveform_cfg">default_waveform_cfg</span></span><span class="p">,</span> <span class="n">featurization_cfg</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.FeaturizationConfig&lt;/span&gt;" href="./#dartsort.FeaturizationConfig">FeaturizationConfig</a></span> <span class="o">=</span> <span class="n"><span title="dartsort.util.internal_config.default_featurization_cfg">default_featurization_cfg</span></span><span class="p">,</span> <span class="n">subtraction_cfg</span><span class="o">=</span><span class="n"><span title="dartsort.util.internal_config.default_subtraction_cfg">default_subtraction_cfg</span></span><span class="p">,</span> <span class="n">sampling_cfg</span><span class="p">:</span> <span class="n"><span title="dartsort.util.internal_config.FitSamplingConfig">FitSamplingConfig</span></span> <span class="o">=</span> <span class="n"><span title="dartsort.util.internal_config.default_peeling_fit_sampling_cfg">default_peeling_fit_sampling_cfg</span></span><span class="p">,</span> <span class="n">computation_cfg</span><span class="p">:</span> <span class="n"><span title="dartsort.util.internal_config.ComputationConfig">ComputationConfig</span></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">chunk_starts_samples</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">stop_after_n_spikes</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">ensure_coverage</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">residual_filename</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">shuffle</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">show_progress</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">hdf5_filename</span><span class="o">=</span><span class="s1">&#39;subtraction.h5&#39;</span><span class="p">,</span> <span class="n">model_subdir</span><span class="o">=</span><span class="s1">&#39;subtraction_models&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.DARTsortSorting&lt;/span&gt;" href="../main_api/#dartsort.DARTsortSorting">DARTsortSorting</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents first">
@@ -2107,6 +2133,8 @@ These are in sections below.</p>
     <div class="doc doc-contents first">
 
 
+
+        <p>Parameters for neural-net based spike detection</p>
 
           <backlinks identifier="dartsort.SubtractionConfig" handler="python" />
 
@@ -2693,7 +2721,7 @@ These are in sections below.</p>
   </span>
 
 <a href="#dartsort.SubtractionConfig.first_denoiser_max_waveforms_fit" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">first_denoiser_max_waveforms_fit</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span> <span class="o">=</span> <span class="mi">250000</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">first_denoiser_max_waveforms_fit</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span> <span class="o">=</span> <span class="mi">512000</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2717,7 +2745,7 @@ These are in sections below.</p>
   </span>
 
 <a href="#dartsort.SubtractionConfig.first_denoiser_noise_snips" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">first_denoiser_noise_snips</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="mi">128</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">first_denoiser_noise_snips</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="mi">256</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2964,6 +2992,8 @@ These are in sections below.</p>
     <div class="doc doc-contents first">
 
 
+
+        <p>Parameters for threshold-crossing spike detection</p>
 
           <backlinks identifier="dartsort.ThresholdingConfig" handler="python" />
 
@@ -5584,6 +5614,8 @@ dec_wfs, dec_ptps = enfdec(waveforms, maxchans)</p>
 
 
 
+        <p>Parameters to control which features are used for initial clustering</p>
+
           <backlinks identifier="dartsort.ClusteringFeaturesConfig" handler="python" />
 
 
@@ -6156,6 +6188,8 @@ dec_wfs, dec_ptps = enfdec(waveforms, maxchans)</p>
     <div class="doc doc-contents first">
 
 
+
+        <p>Initial clustering parameters</p>
 
           <backlinks identifier="dartsort.ClusteringConfig" handler="python" />
 
@@ -6873,6 +6907,8 @@ dec_wfs, dec_ptps = enfdec(waveforms, maxchans)</p>
     <div class="doc doc-contents first">
 
 
+
+        <p>Parameters for clustering refinement</p>
 
           <backlinks identifier="dartsort.RefinementConfig" handler="python" />
 
@@ -8669,6 +8705,30 @@ dec_wfs, dec_ptps = enfdec(waveforms, maxchans)</p>
 
 </div>
 
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="dartsort.RefinementConfig.dedup_ms" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">dedup_ms</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+<a href="#dartsort.RefinementConfig.dedup_ms" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">dedup_ms</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.0</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+          <backlinks identifier="dartsort.RefinementConfig.dedup_ms" handler="python" />
+    </div>
+
+</div>
+
 
 
 
@@ -9292,6 +9352,8 @@ dec_wfs, dec_ptps = enfdec(waveforms, maxchans)</p>
 
 
 
+        <p>Template waveform estimation parameters</p>
+
           <backlinks identifier="dartsort.TemplateConfig" handler="python" />
 
 
@@ -9739,6 +9801,30 @@ dec_wfs, dec_ptps = enfdec(waveforms, maxchans)</p>
     <div class="doc doc-contents ">
 
           <backlinks identifier="dartsort.TemplateConfig.svd_method" handler="python" />
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="dartsort.TemplateConfig.try_reload_svd" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">try_reload_svd</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+<a href="#dartsort.TemplateConfig.try_reload_svd" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">try_reload_svd</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">True</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+          <backlinks identifier="dartsort.TemplateConfig.try_reload_svd" handler="python" />
     </div>
 
 </div>
