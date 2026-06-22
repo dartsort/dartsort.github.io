@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.0.43">
+      <meta name="generator" content="zensical-0.0.46">
     
     
       
@@ -34,7 +34,7 @@
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/modern/main.fba56155.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.19d3147f.min.css">
       
         
           
@@ -1125,8 +1125,8 @@ stick to float32.</p>
 
 
 
-<h4 id="dartsort.DARTsortUserConfig.subsampling_spikes" class="doc doc-heading">
-            <span class="doc doc-object-name doc-attribute-name">subsampling_spikes</span>
+<h4 id="dartsort.DARTsortUserConfig.subsampling_spikes_per_channel" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">subsampling_spikes_per_channel</span>
 
 
   <span class="doc doc-labels">
@@ -1134,8 +1134,8 @@ stick to float32.</p>
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
-<a href="#dartsort.DARTsortUserConfig.subsampling_spikes" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">subsampling_spikes</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="mi">2048000</span>
+<a href="#dartsort.DARTsortUserConfig.subsampling_spikes_per_channel" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">subsampling_spikes_per_channel</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="mi">5000</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -1145,7 +1145,7 @@ this many spikes are found or the whole recording is covered, to make sure
 that there is enough data for clustering. See also subsampling_fraction.
 Set to None to disable subsampling.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.subsampling_spikes" handler="python" />
+          <backlinks identifier="dartsort.DARTsortUserConfig.subsampling_spikes_per_channel" handler="python" />
     </div>
 
 </div>
@@ -1698,8 +1698,8 @@ Default value corresponds to 79 samples at 30kHz.</p>
     <div class="doc doc-contents ">
 
         <p>As a final postprocessing step, only the higher-scoring of any spikes within
-this time radius of each other are kept.</p>
-<p>If this is negative, it does nothing. If it's 0, exact duplicates are dropped.</p>
+this time radius of each other are kept.
+If this is negative, it does nothing. If it's 0, exact duplicates are dropped.</p>
 
           <backlinks identifier="dartsort.DARTsortUserConfig.deduplication_ms" handler="python" />
     </div>
@@ -1804,7 +1804,7 @@ Euclidean norm of standardized data due to matching a new event.</p>
   </span>
 
 <a href="#dartsort.DARTsortUserConfig.initial_threshold" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">initial_threshold</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">10.0</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">initial_threshold</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">9.0</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2729,6 +2729,193 @@ a TsGroup with Tsd entries. Else, regular Ts.</p>
 <div class="doc doc-object doc-function">
 
 
+<h4 id="dartsort.DARTsortSorting.to_sorting_analyzer" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">to_sorting_analyzer</span>
+
+
+<a href="#dartsort.DARTsortSorting.to_sorting_analyzer" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">to_sorting_analyzer</span><span class="p">(</span><span class="n">recording</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="spikeinterface.core.BaseRecording" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.BaseRecording">BaseRecording</a></span><span class="p">,</span> <span class="n">template_data</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.TemplateData&lt;/span&gt;" href="../toolkit_api/#dartsort.TemplateData">TemplateData</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">template_cfg</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.TemplateConfig&lt;/span&gt;" href="../toolkit_api/#dartsort.TemplateConfig">TemplateConfig</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">motion</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.MotionInfo&lt;/span&gt;" href="./#dartsort.MotionInfo">MotionInfo</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">drop_doubles</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">compute_extensions</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Sequence" href="https://docs.python.org/3/library/typing.html#typing.Sequence">Sequence</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;random_spikes&#39;</span><span class="p">,</span> <span class="s1">&#39;waveforms&#39;</span><span class="p">),</span> <span class="n">features_cfg</span><span class="o">=</span><span class="n"><span title="dartsort.util.internal_config.default_clustering_features_cfg">default_clustering_features_cfg</span></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="spikeinterface.core.SortingAnalyzer" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.SortingAnalyzer">SortingAnalyzer</a></span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Export dartsort's internal data to a SortingAnalyzer</p>
+<p>This will first call to_numpy_sorting() and then register some of the sorting's
+features as extensions for the analyzer.</p>
+<p>If template_data is supplied, a templates extension will be registered. Or, you
+can supply template_cfg and motion to compute that.</p>
+<p>The implementation is based on SpikeInterface's <code>read_kilosort_as_analyzer()</code>,
+thanks to Chris Halcrow for that.</p>
+<p>The return value here can be passed into SpikeInterface's Phy export machine
+<code>export_to_phy()</code>.</p>
+<p>TODO: This doesn't handle gain_to_uV... should I not be doing my own amps here?</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>recording</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="spikeinterface.core.BaseRecording" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.BaseRecording">BaseRecording</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>template_data</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.TemplateData&lt;/span&gt;" href="../toolkit_api/#dartsort.TemplateData">TemplateData</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Templates to register with SortingAnalyzer as the templates
+extension</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>template_cfg</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.TemplateConfig&lt;/span&gt;" href="../toolkit_api/#dartsort.TemplateConfig">TemplateConfig</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>If template_data is not supplied but this is (together with motion),
+templates will be estimated using dartsort machinery</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>motion</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.MotionInfo&lt;/span&gt;" href="./#dartsort.MotionInfo">MotionInfo</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>drop_doubles</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Call .drop_doubles(). This will probably do nothing if the sorting had
+dedup_ms &gt; 0 in the parameters.</p>
+              </div>
+            </td>
+            <td>
+                  <code>True</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>compute_extensions</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="typing.Sequence" href="https://docs.python.org/3/library/typing.html#typing.Sequence">Sequence</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>] | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Extra analyzer extensions to compute. The default set is what's needed for
+SpikeInterface's <code>export_to_phy()</code> to run. These are included here because
+SpikeInterface is picky about extension order and will evict the template
+extension if some of these are computed after the templates, which would then
+cause the Phy export to fail.</p>
+              </div>
+            </td>
+            <td>
+                  <code>(&#39;random_spikes&#39;, &#39;waveforms&#39;)</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>features_cfg</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.ClusteringFeaturesConfig&lt;/span&gt;" href="../toolkit_api/#dartsort.ClusteringFeaturesConfig">ClusteringFeaturesConfig</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Stores attribute dataset names</p>
+              </div>
+            </td>
+            <td>
+                  <code><span title="dartsort.util.internal_config.default_clustering_features_cfg">default_clustering_features_cfg</span></code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>analyzer</code></td>            <td>
+                  <code><a class="autorefs autorefs-external" title="spikeinterface.core.SortingAnalyzer" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.SortingAnalyzer">SortingAnalyzer</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+          <backlinks identifier="dartsort.DARTsortSorting.to_sorting_analyzer" handler="python" />
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
 <h4 id="dartsort.DARTsortSorting.copy" class="doc doc-heading">
             <span class="doc doc-object-name doc-function-name">copy</span>
 
@@ -3593,10 +3780,10 @@ order to coarsely align a waveform to its registered position.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight","navigation.collapsible"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight","navigation.collapsible"],"search":"../assets/javascripts/workers/search.b6b7e04f.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../assets/javascripts/bundle.6e5f0216.min.js"></script>
+      <script src="../assets/javascripts/bundle.ee611ef6.min.js"></script>
       
     
   </body>
