@@ -7557,6 +7557,30 @@ dec_wfs, dec_ptps = enfdec(waveforms, maxchans)</p>
 
 
 
+<h4 id="dartsort.RefinementConfig.demolish_cl_alpha" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">demolish_cl_alpha</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+<a href="#dartsort.RefinementConfig.demolish_cl_alpha" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">demolish_cl_alpha</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.0</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+          <backlinks identifier="dartsort.RefinementConfig.demolish_cl_alpha" handler="python" />
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
 <h4 id="dartsort.RefinementConfig.latent_prior_std" class="doc doc-heading">
             <span class="doc doc-object-name doc-attribute-name">latent_prior_std</span>
 
@@ -8407,7 +8431,7 @@ dec_wfs, dec_ptps = enfdec(waveforms, maxchans)</p>
   </span>
 
 <a href="#dartsort.RefinementConfig.em_after_demolish" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">em_after_demolish</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">em_after_demolish</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">True</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -8767,7 +8791,7 @@ dec_wfs, dec_ptps = enfdec(waveforms, maxchans)</p>
   </span>
 
 <a href="#dartsort.RefinementConfig.spikeinterface_merge_preset" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">spikeinterface_merge_preset</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">spikeinterface_merge_preset</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Literal" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">&#39;none&#39;</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -8791,7 +8815,7 @@ dec_wfs, dec_ptps = enfdec(waveforms, maxchans)</p>
   </span>
 
 <a href="#dartsort.RefinementConfig.spikeinterface_merge_max_distance" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">spikeinterface_merge_max_distance</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.5</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">spikeinterface_merge_max_distance</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.8</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -9061,6 +9085,78 @@ dec_wfs, dec_ptps = enfdec(waveforms, maxchans)</p>
     <div class="doc doc-contents ">
 
           <backlinks identifier="dartsort.RefinementConfig.noise_interp_params" handler="python" />
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="dartsort.RefinementConfig.gmm_isolation_threshold" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">gmm_isolation_threshold</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+<a href="#dartsort.RefinementConfig.gmm_isolation_threshold" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">gmm_isolation_threshold</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="mf">0.975</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+          <backlinks identifier="dartsort.RefinementConfig.gmm_isolation_threshold" handler="python" />
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="dartsort.RefinementConfig.gmm_isolation_neighbor_fraction" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">gmm_isolation_neighbor_fraction</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+<a href="#dartsort.RefinementConfig.gmm_isolation_neighbor_fraction" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">gmm_isolation_neighbor_fraction</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.9</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+          <backlinks identifier="dartsort.RefinementConfig.gmm_isolation_neighbor_fraction" handler="python" />
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="dartsort.RefinementConfig.collision_cleaning_error_threshold" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">collision_cleaning_error_threshold</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+<a href="#dartsort.RefinementConfig.collision_cleaning_error_threshold" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">collision_cleaning_error_threshold</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="mf">0.3</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+          <backlinks identifier="dartsort.RefinementConfig.collision_cleaning_error_threshold" handler="python" />
     </div>
 
 </div>
