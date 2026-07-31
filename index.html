@@ -776,26 +776,27 @@ Please feel free to open an issue or a discussion if you run into problems.</p>
 <li>Install <code>dartsort</code> and the rest of its dependencies by running the pip command <a href="#installing-into-an-existing-environment">above</a></li>
 </ul>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>For more detailed documentation of the main function parameters and configuration options, see the <a href="main_api/">main API documentation</a>.</p>
-<h3 id="as-a-python-function">As a Python function<a class="headerlink" href="#as-a-python-function" title="Permanent link">&para;</a></h3>
-<p><em>dartsort</em> can be run in Python with:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">dartsort</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">dartsort</span><span class="o">.</span><span class="n">dartsort</span><span class="p">(</span><span class="n">recording</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">)</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1"># or, to set configuration options, something like...</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">dartsort_result</span> <span class="o">=</span> <span class="n">dartsort</span><span class="o">.</span><span class="n">dartsort</span><span class="p">(</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="n">recording</span><span class="p">,</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="n">output_dir</span><span class="p">,</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="n">cfg</span><span class="o">=</span><span class="n">dartsort</span><span class="o">.</span><span class="n">DARTsortUserConfig</span><span class="p">(</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>        <span class="n">preprocessing</span><span class="o">=</span><span class="s2">&quot;ibllike&quot;</span><span class="p">,</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>        <span class="n">work_in_tmpdir</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>        <span class="n">copy_recording_to_tmpdir</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    <span class="p">),</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="p">)</span>
-</span></code></pre></div>
 <p><strong>Please</strong> read the <a href="#important-configuration-details">important configuration details section</a> below for information on the parameters of the <code>DARTsortUserConfig</code>.
 In particular, you will most likely need to set the <code>preprocessing</code> flag.</p>
+<p>For more detailed documentation of the main function parameters and configuration options, see the <a href="main_api/">main API documentation</a>.</p>
+<h3 id="as-a-python-function">As a Python function<a class="headerlink" href="#as-a-python-function" title="Permanent link">&para;</a></h3>
+<p><em>dartsort</em> can be run in Python with (for example):</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">dartsort</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1"># if the default settings make sense for you...</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">dartsort</span><span class="o">.</span><span class="n">dartsort</span><span class="p">(</span><span class="n">recording</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">)</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="c1"># or, to set configuration options, something like...</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="n">dartsort_result</span> <span class="o">=</span> <span class="n">dartsort</span><span class="o">.</span><span class="n">dartsort</span><span class="p">(</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="n">recording</span><span class="p">,</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="n">output_dir</span><span class="p">,</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="n">cfg</span><span class="o">=</span><span class="n">dartsort</span><span class="o">.</span><span class="n">DARTsortUserConfig</span><span class="p">(</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>        <span class="n">preprocessing</span><span class="o">=</span><span class="s2">&quot;ibllike&quot;</span><span class="p">,</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>        <span class="n">work_in_tmpdir</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>        <span class="n">copy_recording_to_tmpdir</span><span class="o">=</span><span class="s2">&quot;yes&quot;</span><span class="p">,</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    <span class="p">),</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="p">)</span>
+</span></code></pre></div>
 <p>Here, <code>recording</code> is a <a href="https://spikeinterface.readthedocs.io">SpikeInterface</a> recording object (see their tutorial on <a href="https://spikeinterface.readthedocs.io/en/stable/how_to/read_various_formats.html">reading various recording formats</a>).
 <code>output_dir</code> is the folder where <em>dartsort</em> will save its output.
 There are more details on these and the rest of the arguments in the <a href="main_api/">main API documentation</a>.</p>
