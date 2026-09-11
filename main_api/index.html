@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.0.56">
+      <meta name="generator" content="zensical-0.0.61">
     
     
       
@@ -34,12 +34,12 @@
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/modern/main.20815dad.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.ce62732f.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.812a03bb.min.css">
       
       
 
@@ -1993,7 +1993,7 @@ which is important.</p>
   </span>
 
 <a href="#dartsort.DARTsortUserConfig.featurization_radius_um" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">featurization_radius_um</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">100.0</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">featurization_radius_um</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">150.0</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2193,8 +2193,8 @@ path to None to train a  brand-new unsupervised denoiser.</p>
 
 
 
-<h4 id="dartsort.DARTsortUserConfig.agg_kind" class="doc doc-heading">
-            <span class="doc doc-object-name doc-attribute-name">agg_kind</span>
+<h4 id="dartsort.DARTsortUserConfig.postprocessing" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">postprocessing</span>
 
 
   <span class="doc doc-labels">
@@ -2202,46 +2202,16 @@ path to None to train a  brand-new unsupervised denoiser.</p>
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
-<a href="#dartsort.DARTsortUserConfig.agg_kind" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">agg_kind</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Literal" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'none'</span><span class="p">,</span> <span class="s1">'template_distance'</span><span class="p">,</span> <span class="s1">'qda'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'qda'</span>
+<a href="#dartsort.DARTsortUserConfig.postprocessing" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">postprocessing</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Literal" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'agglomerate_and_clean'</span><span class="p">,</span> <span class="s1">'agglomerate'</span><span class="p">,</span> <span class="s1">'clean'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'agglomerate_and_clean'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
-        <p>Final distance or GMM-based merge type.</p>
+        <p>Which steps run after the last matching iteration. Agglomeration merges
+oversplit units; cleaning deduplicates and orders units by depth.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.agg_kind" handler="python" />
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="dartsort.DARTsortUserConfig.spikeinterface_merge_preset" class="doc doc-heading">
-            <span class="doc doc-object-name doc-attribute-name">spikeinterface_merge_preset</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#dartsort.DARTsortUserConfig.spikeinterface_merge_preset" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">spikeinterface_merge_preset</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Literal" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'none'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'none'</span>
-</span></code></pre></div>
-
-    <div class="doc doc-contents ">
-
-        <p>Call out to SpikeInterface's auto_merge() for a final merge using timing / RP information.
-Setting this is slightly different' from calling auto_merge() externally, since the internal
-version will make use of dartsort's templates and template distances.
-dartsort extends auto_merge() with some additional presets: dartsort_slay_xc_ccg,
-dartsort_slay_xc, dartsort_slay_ccg. These are conservative presets; see and cite
-Koukuntla et al., 2025 for the SLAY score criterion.</p>
-
-          <backlinks identifier="dartsort.DARTsortUserConfig.spikeinterface_merge_preset" handler="python" />
+          <backlinks identifier="dartsort.DARTsortUserConfig.postprocessing" handler="python" />
     </div>
 
 </div>
@@ -2632,6 +2602,54 @@ Koukuntla et al., 2025 for the SLAY score criterion.</p>
     <div class="doc doc-contents ">
 
           <backlinks identifier="dartsort.DARTsortUserConfig.median_neighborhood_bins" handler="python" />
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="dartsort.DARTsortUserConfig.fit_matching_models_only" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">fit_matching_models_only</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+<a href="#dartsort.DARTsortUserConfig.fit_matching_models_only" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">fit_matching_models_only</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+          <backlinks identifier="dartsort.DARTsortUserConfig.fit_matching_models_only" handler="python" />
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="dartsort.DARTsortUserConfig.save_full_final_residual" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">save_full_final_residual</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+<a href="#dartsort.DARTsortUserConfig.save_full_final_residual" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">save_full_final_residual</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+          <backlinks identifier="dartsort.DARTsortUserConfig.save_full_final_residual" handler="python" />
     </div>
 
 </div>
@@ -3361,6 +3379,30 @@ in the npz.</p>
 
 </div>
 
+<div class="doc doc-object doc-function">
+
+
+<h4 id="dartsort.DARTsortSorting.remap_gmm_properties" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">remap_gmm_properties</span>
+
+
+<a href="#dartsort.DARTsortSorting.remap_gmm_properties" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">remap_gmm_properties</span><span class="p">(</span><span class="n">remap</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">new_K</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span><span class="p">,</span> <span class="n">in_place</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></span><span class="p">,</span> <span class="n">prefixes</span><span class="o">=</span><span class="p">(</span><span class="s1">'merged'</span><span class="p">,</span> <span class="s1">'gmm'</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#dict">dict</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">]</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Apply <code>remap</code> to GMM candidates, optionally in-place</p>
+<p>Candidates not in [0, new_K) -- eg "ghost" units, which are not
+top candidates but still exist in the lower ranks -- have their
+probability added to the noise component.</p>
+
+          <backlinks identifier="dartsort.DARTsortSorting.remap_gmm_properties" handler="python" />
+
+    </div>
+
+</div>
+
 
 
   </div>
@@ -3862,10 +3904,14 @@ order to coarsely align a waveform to its registered position.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight","navigation.collapsible"],"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight","navigation.collapsible"],"redirect":null,"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../assets/javascripts/bundle.e886cdf1.min.js"></script>
+      <script src="../assets/javascripts/bundle.df5d1f2b.min.js"></script>
       
     
   </body>
