@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.0.64">
+      <meta name="generator" content="zensical-0.0.66">
     
     
       
@@ -34,7 +34,7 @@
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/modern/main.40d3fdbb.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.1502b751.min.css">
       
         
           
@@ -738,7 +738,7 @@ If you're just getting started, the <a href="/#usage">usage section on the front
 
 
 <a href="#dartsort.dartsort" class="headerlink" title="Permanent link">&para;</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">dartsort</span><span class="p">(</span><span class="n">recording</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="spikeinterface.core.BaseRecording" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.BaseRecording">BaseRecording</a></span><span class="p">,</span> <span class="n">output_dir</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></span><span class="p">,</span> <span class="n">cfg</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.DARTsortUserConfig&lt;/span&gt;" href="./#dartsort.DARTsortUserConfig">DARTsortUserConfig</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></span> <span class="o">|</span> <span class="n"><span title="dartsort.config.DeveloperConfig">DeveloperConfig</span></span> <span class="o">|</span> <span class="n"><span title="dartsort.util.internal_config.DARTsortInternalConfig">DARTsortInternalConfig</span></span> <span class="o">=</span> <span class="n"><span title="dartsort.util.internal_config.default_dartsort_cfg">default_dartsort_cfg</span></span><span class="p">,</span> <span class="n">motion</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.MotionInfo&lt;/span&gt;" href="./#dartsort.MotionInfo">MotionInfo</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">si_motion</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="spikeinterface.core.Motion" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.Motion">Motion</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">dredge_motion_est</span><span class="p">:</span> <span class="n"><span title="dredge.motion_util.MotionEstimate">MotionEstimate</span></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.DARTsortResult&lt;/span&gt;" href="./#dartsort.DARTsortResult">DARTsortResult</a></span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">dartsort</span><span class="p">(</span><span class="n">recording</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;spikeinterface.core.BaseRecording&lt;/code&gt;" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.BaseRecording">BaseRecording</a></span><span class="p">,</span> <span class="n">output_dir</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;pathlib.Path&lt;/code&gt;" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></span><span class="p">,</span> <span class="n">cfg</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.DARTsortUserConfig&lt;/span&gt; (&lt;code&gt;dartsort.config.DARTsortUserConfig&lt;/code&gt;)" href="./#dartsort.DARTsortUserConfig">DARTsortUserConfig</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;pathlib.Path&lt;/code&gt;" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></span> <span class="o">|</span> <span class="n"><span title="dartsort.config.DeveloperConfig">DeveloperConfig</span></span> <span class="o">|</span> <span class="n"><span title="dartsort.util.internal_config.DARTsortInternalConfig">DARTsortInternalConfig</span></span> <span class="o">=</span> <span class="n"><span title="dartsort.util.internal_config.default_dartsort_cfg">default_dartsort_cfg</span></span><span class="p">,</span> <span class="n">motion</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.MotionInfo&lt;/span&gt; (&lt;code&gt;dartsort.util.motion.MotionInfo&lt;/code&gt;)" href="./#dartsort.MotionInfo">MotionInfo</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">si_motion</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;spikeinterface.core.Motion&lt;/code&gt;" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.Motion">Motion</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">dredge_motion_est</span><span class="p">:</span> <span class="n"><span title="dredge.motion_util.MotionEstimate">MotionEstimate</span></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.DARTsortResult&lt;/span&gt; (&lt;code&gt;dartsort.util.main_util.DARTsortResult&lt;/code&gt;)" href="./#dartsort.DARTsortResult">DARTsortResult</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents first">
@@ -762,7 +762,7 @@ If you're just getting started, the <a href="/#usage">usage section on the front
                 <code>recording</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-external" title="spikeinterface.core.BaseRecording" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.BaseRecording">BaseRecording</a></code>
+                  <code><a class="autorefs autorefs-external" title="&lt;code&gt;spikeinterface.core.BaseRecording&lt;/code&gt;" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.BaseRecording">BaseRecording</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -778,7 +778,7 @@ If you're just getting started, the <a href="/#usage">usage section on the front
                 <code>output_dir</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a> or <a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></code>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a> or <a class="autorefs autorefs-external" title="&lt;code&gt;pathlib.Path&lt;/code&gt;" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -796,7 +796,7 @@ then only save the final outputs here.</p>
                 <code>cfg</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.DARTsortUserConfig&lt;/span&gt;" href="./#dartsort.DARTsortUserConfig">DARTsortUserConfig</a> or <span title="dartsort.util.internal_config.DARTsortInternalConfig">DARTsortInternalConfig</span> or <a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a> or <a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></code>
+                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.DARTsortUserConfig&lt;/span&gt; (&lt;code&gt;dartsort.config.DARTsortUserConfig&lt;/code&gt;)" href="./#dartsort.DARTsortUserConfig">DARTsortUserConfig</a> or <span title="dartsort.util.internal_config.DARTsortInternalConfig">DARTsortInternalConfig</span> or <a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a> or <a class="autorefs autorefs-external" title="&lt;code&gt;pathlib.Path&lt;/code&gt;" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -813,7 +813,7 @@ you can pass a string or Path pointing to a .toml file here.</p>
                 <code>si_motion</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-external" title="spikeinterface.core.Motion" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.Motion">Motion</a></code>
+                  <code><a class="autorefs autorefs-external" title="&lt;code&gt;spikeinterface.core.Motion&lt;/code&gt;" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.Motion">Motion</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -875,7 +875,7 @@ it will do nothing.</p>
       <tbody>
           <tr class="doc-section-item">
 <td><code>results</code></td>            <td>
-                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.DARTsortResult&lt;/span&gt;" href="./#dartsort.DARTsortResult">DARTsortResult</a></code>
+                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.DARTsortResult&lt;/span&gt; (&lt;code&gt;dartsort.util.main_util.DARTsortResult&lt;/code&gt;)" href="./#dartsort.DARTsortResult">DARTsortResult</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -890,7 +890,7 @@ it will do nothing.</p>
       </tbody>
     </table>
 
-          <backlinks identifier="dartsort.dartsort" handler="python" />
+          
 
     </div>
 
@@ -912,7 +912,33 @@ it will do nothing.</p>
 
 
 
-          <backlinks identifier="dartsort.DARTsortResult" handler="python" />
+          
+
+
+  <div class="doc doc-backlinks">
+        <b class="doc doc-backlink-type">Returned by:</b>
+        <ul class="doc doc-backlink-list">
+            <li class="doc doc-backlink">
+                  <span class="doc doc-backlink-crumb">
+      <span>User documentation</span>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="./#main-api-dartsort-and-the-dartsortuserconfig">Main API: dartsort() and the DARTsortUserConfig</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="./#main-function-dartsort">Main function: dartsort()</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb last">
+      <a href="./#dartsort.dartsort">dartsort</a>
+  </span>
+
+            </li>
+        </ul>
+  </div>
+
 
 
 
@@ -944,14 +970,14 @@ it will do nothing.</p>
   </span>
 
 <a href="#dartsort.DARTsortResult.sorting" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">sorting</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.DARTsortSorting&lt;/span&gt;" href="./#dartsort.DARTsortSorting">DARTsortSorting</a></span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">sorting</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.DARTsortSorting&lt;/span&gt; (&lt;code&gt;dartsort.util.data_util.DARTsortSorting&lt;/code&gt;)" href="./#dartsort.DARTsortSorting">DARTsortSorting</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Output spike trains.</p>
 
-          <backlinks identifier="dartsort.DARTsortResult.sorting" handler="python" />
+          
     </div>
 
 </div>
@@ -969,14 +995,14 @@ it will do nothing.</p>
   </span>
 
 <a href="#dartsort.DARTsortResult.motion" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">motion</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.MotionInfo&lt;/span&gt;" href="./#dartsort.MotionInfo">MotionInfo</a></span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">motion</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.MotionInfo&lt;/span&gt; (&lt;code&gt;dartsort.util.motion.MotionInfo&lt;/code&gt;)" href="./#dartsort.MotionInfo">MotionInfo</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Esimated motion</p>
 
-          <backlinks identifier="dartsort.DARTsortResult.motion" handler="python" />
+          
     </div>
 
 </div>
@@ -1017,7 +1043,33 @@ You may also want to take a look at the paramters for </p>
 <p>To change dartsort's behavior, set parameters here and pass the object
 to the <code>dartsort()</code> function.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig" handler="python" />
+          
+
+
+  <div class="doc doc-backlinks">
+        <b class="doc doc-backlink-type">Used by:</b>
+        <ul class="doc doc-backlink-list">
+            <li class="doc doc-backlink">
+                  <span class="doc doc-backlink-crumb">
+      <span>User documentation</span>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="./#main-api-dartsort-and-the-dartsortuserconfig">Main API: dartsort() and the DARTsortUserConfig</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="./#main-function-dartsort">Main function: dartsort()</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb last">
+      <a href="./#dartsort.dartsort">dartsort</a>
+  </span>
+
+            </li>
+        </ul>
+  </div>
+
 
 
 
@@ -1057,7 +1109,7 @@ to the <code>dartsort()</code> function.</p>
 
         <p>Set this to false if your data is super stable or already motion-corrected.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.do_motion_estimation" handler="python" />
+          
     </div>
 
 </div>
@@ -1076,7 +1128,7 @@ to the <code>dartsort()</code> function.</p>
   </span>
 
 <a href="#dartsort.DARTsortUserConfig.already_preprocessed" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">already_preprocessed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Literal" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'yes'</span><span class="p">,</span> <span class="s1">'no'</span><span class="p">,</span> <span class="s1">'assume_yes_if_float'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'assume_yes_if_float'</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">already_preprocessed</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Literal&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'yes'</span><span class="p">,</span> <span class="s1">'no'</span><span class="p">,</span> <span class="s1">'assume_yes_if_float'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'assume_yes_if_float'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -1089,7 +1141,7 @@ type is any floating point type.</p>
 (see check_recording in data_util and warn_about_preprocessing in
 preprocess_util).</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.already_preprocessed" handler="python" />
+          
     </div>
 
 </div>
@@ -1120,7 +1172,7 @@ the usual highpass filtering, but that whitening is handled internally. See
 util/preprocess_util.py if you're curious about the details of the methods.</p>
 <p>Options: <code>'ibllikecmr', 'ibllike', 'standardize', 'none'</code></p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.preprocessing" handler="python" />
+          
     </div>
 
 </div>
@@ -1139,7 +1191,7 @@ util/preprocess_util.py if you're curious about the details of the methods.</p>
   </span>
 
 <a href="#dartsort.DARTsortUserConfig.preprocessing_dtype" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">preprocessing_dtype</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Literal" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'float16'</span><span class="p">,</span> <span class="s1">'float32'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'float32'</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">preprocessing_dtype</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Literal&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'float16'</span><span class="p">,</span> <span class="s1">'float32'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'float32'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -1149,7 +1201,7 @@ to save a preprocessed copy of the recording, float16 is a good option. Only
 relevant if <code>preprocessing != 'none'</code>. If the recording isn't getting saved,
 stick to float32.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.preprocessing_dtype" handler="python" />
+          
     </div>
 
 </div>
@@ -1178,7 +1230,7 @@ this many spikes are found or the whole recording is covered, to make sure
 that there is enough data for clustering. See also subsampling_presence.
 Set to None to disable subsampling.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.subsampling_spikes_per_channel" handler="python" />
+          
     </div>
 
 </div>
@@ -1207,7 +1259,7 @@ spikes are only allowed to end early if they additionally cover this
 fraction of the recording, to make sure there's some coverage of
 conditions for template estimation.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.subsampling_presence" handler="python" />
+          
     </div>
 
 </div>
@@ -1234,7 +1286,7 @@ conditions for template estimation.</p>
         <p>By default, 1 template matching step is carried out using templates
 estimated from the initial detection round.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.matching_iterations" handler="python" />
+          
     </div>
 
 </div>
@@ -1260,7 +1312,7 @@ estimated from the initial detection round.</p>
 
         <p>Whether to stop after initial localization and motion tracking.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.dredge_only" handler="python" />
+          
     </div>
 
 </div>
@@ -1288,7 +1340,7 @@ estimated from the initial detection round.</p>
 everything runs on the main thread; negative means <code>#cpu - (val+1)</code>
 so that -1 is all cores, -2 is all less 1, etc.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.n_jobs_cpu" handler="python" />
+          
     </div>
 
 </div>
@@ -1314,7 +1366,7 @@ so that -1 is all cores, -2 is all less 1, etc.</p>
 
         <p>Number of parallel workers to use when running on GPU.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.n_jobs_gpu" handler="python" />
+          
     </div>
 
 </div>
@@ -1340,7 +1392,7 @@ so that -1 is all cores, -2 is all less 1, etc.</p>
 
         <p>Max workers to use for small jobs.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.n_jobs_small" handler="python" />
+          
     </div>
 
 </div>
@@ -1366,7 +1418,7 @@ so that -1 is all cores, -2 is all less 1, etc.</p>
 
         <p>Max workers to use for small jobs running on GPU.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.n_jobs_small_gpu" handler="python" />
+          
     </div>
 
 </div>
@@ -1394,7 +1446,7 @@ so that -1 is all cores, -2 is all less 1, etc.</p>
 or 'cuda' or 'cuda:1'. If unset, uses n_jobs_gpu of your CUDA
 GPUs if you have multiple, or else just the one, or your CPU.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.device" handler="python" />
+          
     </div>
 
 </div>
@@ -1420,7 +1472,7 @@ GPUs if you have multiple, or else just the one, or your CPU.</p>
 
         <p>Choose: 'threading_unless_multigpu', 'ThreadPoolExecutor', 'ProcessPoolExecutor', or some others.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.executor" handler="python" />
+          
     </div>
 
 </div>
@@ -1446,7 +1498,7 @@ GPUs if you have multiple, or else just the one, or your CPU.</p>
 
         <p>Batch size for data processing.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.chunk_length_samples" handler="python" />
+          
     </div>
 
 </div>
@@ -1472,7 +1524,7 @@ GPUs if you have multiple, or else just the one, or your CPU.</p>
 
         <p>If True, dartsort will store all temporary data in a scratch directory in tmpdir_parent or TMPDIR.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.work_in_tmpdir" handler="python" />
+          
     </div>
 
 </div>
@@ -1491,14 +1543,14 @@ GPUs if you have multiple, or else just the one, or your CPU.</p>
   </span>
 
 <a href="#dartsort.DARTsortUserConfig.copy_recording_to_tmpdir" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">copy_recording_to_tmpdir</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Literal" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'yes'</span><span class="p">,</span> <span class="s1">'no'</span><span class="p">,</span> <span class="s1">'if_preprocessing'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'if_preprocessing'</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">copy_recording_to_tmpdir</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Literal&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'yes'</span><span class="p">,</span> <span class="s1">'no'</span><span class="p">,</span> <span class="s1">'if_preprocessing'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'if_preprocessing'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Save a copy of the preprocessed recording to a tmpdir?</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.copy_recording_to_tmpdir" handler="python" />
+          
     </div>
 
 </div>
@@ -1517,14 +1569,14 @@ GPUs if you have multiple, or else just the one, or your CPU.</p>
   </span>
 
 <a href="#dartsort.DARTsortUserConfig.workdir_copier" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">workdir_copier</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Literal" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'shutil'</span><span class="p">,</span> <span class="s1">'rsync'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'shutil'</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">workdir_copier</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Literal&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'shutil'</span><span class="p">,</span> <span class="s1">'rsync'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'shutil'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>'shutil' or 'rsync'</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.workdir_copier" handler="python" />
+          
     </div>
 
 </div>
@@ -1548,7 +1600,7 @@ GPUs if you have multiple, or else just the one, or your CPU.</p>
 
     <div class="doc doc-contents ">
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.workdir_follow_symlinks" handler="python" />
+          
     </div>
 
 </div>
@@ -1574,7 +1626,7 @@ GPUs if you have multiple, or else just the one, or your CPU.</p>
 
         <p>Control where tmpdirs are created.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.tmpdir_parent" handler="python" />
+          
     </div>
 
 </div>
@@ -1600,7 +1652,7 @@ GPUs if you have multiple, or else just the one, or your CPU.</p>
 
         <p>Store all spike features from intermediate steps (for debugging)</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.save_intermediates" handler="python" />
+          
     </div>
 
 </div>
@@ -1626,7 +1678,7 @@ GPUs if you have multiple, or else just the one, or your CPU.</p>
 
         <p>Store the spike features from the final step (instead of just basic spike train outputs).</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.save_final_features" handler="python" />
+          
     </div>
 
 </div>
@@ -1653,7 +1705,7 @@ GPUs if you have multiple, or else just the one, or your CPU.</p>
         <p>Length of time (ms) before trough (or peak) in waveform snippets.
 Default value corresponds to 42 samples at 30kHz.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.ms_before" handler="python" />
+          
     </div>
 
 </div>
@@ -1680,7 +1732,7 @@ Default value corresponds to 42 samples at 30kHz.</p>
         <p>Length of time (ms) after trough (or peak) in waveform snippets.
 Default value corresponds to 79 samples at 30kHz.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.ms_after" handler="python" />
+          
     </div>
 
 </div>
@@ -1706,7 +1758,7 @@ Default value corresponds to 79 samples at 30kHz.</p>
 
         <p>Largest time shift allowed when re-aligning events.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.alignment_ms" handler="python" />
+          
     </div>
 
 </div>
@@ -1734,7 +1786,7 @@ Default value corresponds to 79 samples at 30kHz.</p>
 this time radius of each other are kept.
 If this is negative, it does nothing. If it's 0, exact duplicates are dropped.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.deduplication_ms" handler="python" />
+          
     </div>
 
 </div>
@@ -1753,7 +1805,7 @@ If this is negative, it does nothing. If it's 0, exact duplicates are dropped.</
   </span>
 
 <a href="#dartsort.DARTsortUserConfig.peak_sign" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">peak_sign</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Literal" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'neg'</span><span class="p">,</span> <span class="s1">'both'</span><span class="p">,</span> <span class="s1">'pos'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'both'</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">peak_sign</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Literal&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'neg'</span><span class="p">,</span> <span class="s1">'both'</span><span class="p">,</span> <span class="s1">'pos'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'both'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -1761,7 +1813,7 @@ If this is negative, it does nothing. If it's 0, exact duplicates are dropped.</
         <p>Allow only troughs or events of both signs when detecting threshold
 crossings during initialization. Or positive only, if that's your thing.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.peak_sign" handler="python" />
+          
     </div>
 
 </div>
@@ -1788,7 +1840,7 @@ crossings during initialization. Or positive only, if that's your thing.</p>
         <p>Threshold in standardized (SNR) voltage units for initial detection;
 peaks or troughs larger than this value will be grabbed.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.voltage_threshold" handler="python" />
+          
     </div>
 
 </div>
@@ -1818,7 +1870,7 @@ that match will be used. This is in the same units as the corresponding
 threshold in Kilosort and other sorters, and it represents reduction in
 Euclidean norm of standardized data due to matching a new event.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.matching_threshold" handler="python" />
+          
     </div>
 
 </div>
@@ -1846,7 +1898,7 @@ Euclidean norm of standardized data due to matching a new event.</p>
 matching_threshold, except that a neural net is trying to guess
 the true waveforms here, rather than using cluster templates.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.initial_threshold" handler="python" />
+          
     </div>
 
 </div>
@@ -1873,7 +1925,7 @@ the true waveforms here, rather than using cluster templates.</p>
         <p>If subsampling, a quick thresholding will be run at this voltage
 threshold to grab spikes for motion estimation purposes.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.motion_voltage_threshold" handler="python" />
+          
     </div>
 
 </div>
@@ -1899,7 +1951,7 @@ threshold to grab spikes for motion estimation purposes.</p>
 
         <p>Rank of temporal PCAs used in denoising and featurization.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.temporal_pca_rank" handler="python" />
+          
     </div>
 
 </div>
@@ -1925,7 +1977,7 @@ threshold to grab spikes for motion estimation purposes.</p>
 
         <p>As ms_before, but used only when computing PCA features in clustering.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.feature_ms_before" handler="python" />
+          
     </div>
 
 </div>
@@ -1951,7 +2003,7 @@ threshold to grab spikes for motion estimation purposes.</p>
 
         <p>As ms_after, but used only when computing PCA features in clustering.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.feature_ms_after" handler="python" />
+          
     </div>
 
 </div>
@@ -1978,7 +2030,7 @@ threshold to grab spikes for motion estimation purposes.</p>
         <p>Radius of neighborhoods around spike events extracted
 when denoising and subtracting NN-denoised events.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.subtraction_radius_um" handler="python" />
+          
     </div>
 
 </div>
@@ -2007,7 +2059,7 @@ same time within this radius, then the smaller of the two is
 ignored. But also all of the secondary channels of the big one,
 which is important.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.deduplication_radius_um" handler="python" />
+          
     </div>
 
 </div>
@@ -2034,7 +2086,7 @@ which is important.</p>
         <p>Radius around detection channel or template peak channel used
 to extract spike features for clustering.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.featurization_radius_um" handler="python" />
+          
     </div>
 
 </div>
@@ -2060,7 +2112,7 @@ to extract spike features for clustering.</p>
 
         <p>Extraction radius when fitting features like PCA; smaller than other radii to include less noise.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.fit_radius_um" handler="python" />
+          
     </div>
 
 </div>
@@ -2086,7 +2138,7 @@ to extract spike features for clustering.</p>
 
         <p>Radius around main channel used when localizing spikes.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.localization_radius_um" handler="python" />
+          
     </div>
 
 </div>
@@ -2105,7 +2157,7 @@ to extract spike features for clustering.</p>
   </span>
 
 <a href="#dartsort.DARTsortUserConfig.nn_denoiser_class_name" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">nn_denoiser_class_name</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Literal" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'SingleChannelWaveformDenoiser'</span><span class="p">,</span> <span class="s1">'Decollider'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Decollider'</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">nn_denoiser_class_name</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Literal&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'SingleChannelWaveformDenoiser'</span><span class="p">,</span> <span class="s1">'Decollider'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Decollider'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2113,7 +2165,7 @@ to extract spike features for clustering.</p>
         <p>Which neural net to use in initial detection? Set to Decollider (and set the pretrained
 path to None to train a  brand-new unsupervised denoiser.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.nn_denoiser_class_name" handler="python" />
+          
     </div>
 
 </div>
@@ -2139,7 +2191,7 @@ path to None to train a  brand-new unsupervised denoiser.</p>
 
         <p>Path to a pytorch saved model (.pt file as dumped by torch.save()). If this is None, a new model will be fit.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.nn_denoiser_pretrained_path" handler="python" />
+          
     </div>
 
 </div>
@@ -2165,7 +2217,7 @@ path to None to train a  brand-new unsupervised denoiser.</p>
 
         <p>Standard deviation of amplitude scaling regularization prior in template matching.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.amplitude_scaling_stddev" handler="python" />
+          
     </div>
 
 </div>
@@ -2191,7 +2243,7 @@ path to None to train a  brand-new unsupervised denoiser.</p>
 
         <p>Boundaries on the amount of scaling allowed.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.amplitude_scaling_boundary" handler="python" />
+          
     </div>
 
 </div>
@@ -2217,7 +2269,7 @@ path to None to train a  brand-new unsupervised denoiser.</p>
 
         <p>Upsampling of templates during matching to allow for temporal aliasing of waveforms.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.temporal_upsamples" handler="python" />
+          
     </div>
 
 </div>
@@ -2236,7 +2288,7 @@ path to None to train a  brand-new unsupervised denoiser.</p>
   </span>
 
 <a href="#dartsort.DARTsortUserConfig.postprocessing" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">postprocessing</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Literal" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'agglomerate_and_clean'</span><span class="p">,</span> <span class="s1">'agglomerate'</span><span class="p">,</span> <span class="s1">'clean'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'agglomerate_and_clean'</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">postprocessing</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Literal&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'agglomerate_and_clean'</span><span class="p">,</span> <span class="s1">'agglomerate'</span><span class="p">,</span> <span class="s1">'clean'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'agglomerate_and_clean'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2244,7 +2296,7 @@ path to None to train a  brand-new unsupervised denoiser.</p>
         <p>Which steps run after the last matching iteration. Agglomeration merges
 oversplit units; cleaning deduplicates and orders units by depth.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.postprocessing" handler="python" />
+          
     </div>
 
 </div>
@@ -2270,7 +2322,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
         <p>Use rigid registration and ignore the window parameters.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.rigid" handler="python" />
+          
     </div>
 
 </div>
@@ -2294,7 +2346,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
     <div class="doc doc-contents ">
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.probe_boundary_padding_um" handler="python" />
+          
     </div>
 
 </div>
@@ -2318,7 +2370,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
     <div class="doc doc-contents ">
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.spatial_bin_length_um" handler="python" />
+          
     </div>
 
 </div>
@@ -2342,7 +2394,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
     <div class="doc doc-contents ">
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.temporal_bin_length_s" handler="python" />
+          
     </div>
 
 </div>
@@ -2366,7 +2418,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
     <div class="doc doc-contents ">
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.smoothing_um" handler="python" />
+          
     </div>
 
 </div>
@@ -2390,7 +2442,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
     <div class="doc doc-contents ">
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.smoothing_s" handler="python" />
+          
     </div>
 
 </div>
@@ -2414,7 +2466,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
     <div class="doc doc-contents ">
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.window_step_um" handler="python" />
+          
     </div>
 
 </div>
@@ -2438,7 +2490,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
     <div class="doc doc-contents ">
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.window_scale_um" handler="python" />
+          
     </div>
 
 </div>
@@ -2462,7 +2514,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
     <div class="doc doc-contents ">
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.window_margin_um" handler="python" />
+          
     </div>
 
 </div>
@@ -2486,7 +2538,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
     <div class="doc doc-contents ">
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.max_dt_s" handler="python" />
+          
     </div>
 
 </div>
@@ -2510,7 +2562,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
     <div class="doc doc-contents ">
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.max_disp_um" handler="python" />
+          
     </div>
 
 </div>
@@ -2534,7 +2586,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
     <div class="doc doc-contents ">
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.correlation_threshold" handler="python" />
+          
     </div>
 
 </div>
@@ -2558,7 +2610,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
     <div class="doc doc-contents ">
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.min_amplitude" handler="python" />
+          
     </div>
 
 </div>
@@ -2584,7 +2636,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
         <p>Motion bins exceeding this speed will be replaced by interpolation.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.speed_limit_um_per_s" handler="python" />
+          
     </div>
 
 </div>
@@ -2610,7 +2662,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
         <p>Motion bins farther than this from the local median will be replaced by interpolation.</p>
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.max_dist_from_median_um" handler="python" />
+          
     </div>
 
 </div>
@@ -2634,7 +2686,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
     <div class="doc doc-contents ">
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.median_neighborhood_bins" handler="python" />
+          
     </div>
 
 </div>
@@ -2658,7 +2710,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
     <div class="doc doc-contents ">
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.fit_matching_models_only" handler="python" />
+          
     </div>
 
 </div>
@@ -2682,7 +2734,7 @@ oversplit units; cleaning deduplicates and orders units by depth.</p>
 
     <div class="doc doc-contents ">
 
-          <backlinks identifier="dartsort.DARTsortUserConfig.save_full_final_residual" handler="python" />
+          
     </div>
 
 </div>
@@ -2724,7 +2776,180 @@ flag load_simple_features is True (default), then additional
 features of spikes will be loaded into memory -- like localizations,
 which you can access like <code>sorting.point_source_localizations[...]</code>.</p>
 
-          <backlinks identifier="dartsort.DARTsortSorting" handler="python" />
+          
+
+
+  <div class="doc doc-backlinks">
+        <b class="doc doc-backlink-type">Returned by:</b>
+        <ul class="doc doc-backlink-list">
+            <li class="doc doc-backlink">
+                  <span class="doc doc-backlink-crumb">
+      <span>User documentation</span>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#toolkit-documentation">Toolkit documentation</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#detecting-cleaning-and-featurizing-spikes-peeling">Detecting, cleaning, and featurizing spikes ("peeling")</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb last">
+      <a href="../toolkit_api/#dartsort.grab">grab</a>
+  </span>
+
+            </li>
+            <li class="doc doc-backlink">
+                  <span class="doc doc-backlink-crumb">
+      <span>User documentation</span>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#toolkit-documentation">Toolkit documentation</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#detecting-cleaning-and-featurizing-spikes-peeling">Detecting, cleaning, and featurizing spikes ("peeling")</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb last">
+      <a href="../toolkit_api/#dartsort.match">match</a>
+  </span>
+
+            </li>
+            <li class="doc doc-backlink">
+                  <span class="doc doc-backlink-crumb">
+      <span>User documentation</span>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#toolkit-documentation">Toolkit documentation</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#detecting-cleaning-and-featurizing-spikes-peeling">Detecting, cleaning, and featurizing spikes ("peeling")</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb last">
+      <a href="../toolkit_api/#dartsort.subtract">subtract</a>
+  </span>
+
+            </li>
+            <li class="doc doc-backlink">
+                  <span class="doc doc-backlink-crumb">
+      <span>User documentation</span>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#toolkit-documentation">Toolkit documentation</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#detecting-cleaning-and-featurizing-spikes-peeling">Detecting, cleaning, and featurizing spikes ("peeling")</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb last">
+      <a href="../toolkit_api/#dartsort.threshold">threshold</a>
+  </span>
+
+            </li>
+            <li class="doc doc-backlink">
+                  <span class="doc doc-backlink-crumb">
+      <span>User documentation</span>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#toolkit-documentation">Toolkit documentation</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#template-waveform-estimation">Template waveform estimation</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb last">
+      <a href="../toolkit_api/#dartsort.estimate_template_library">estimate_template_library</a>
+  </span>
+
+            </li>
+        </ul>
+        <b class="doc doc-backlink-type">Used by:</b>
+        <ul class="doc doc-backlink-list">
+            <li class="doc doc-backlink">
+                  <span class="doc doc-backlink-crumb">
+      <span>User documentation</span>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#toolkit-documentation">Toolkit documentation</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#clustering">Clustering</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb last">
+      <a href="../toolkit_api/#dartsort.cluster">cluster</a>
+  </span>
+
+            </li>
+            <li class="doc doc-backlink">
+                  <span class="doc doc-backlink-crumb">
+      <span>User documentation</span>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#toolkit-documentation">Toolkit documentation</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#detecting-cleaning-and-featurizing-spikes-peeling">Detecting, cleaning, and featurizing spikes ("peeling")</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb last">
+      <a href="../toolkit_api/#dartsort.grab">grab</a>
+  </span>
+
+            </li>
+            <li class="doc doc-backlink">
+                  <span class="doc doc-backlink-crumb">
+      <span>User documentation</span>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#toolkit-documentation">Toolkit documentation</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#detecting-cleaning-and-featurizing-spikes-peeling">Detecting, cleaning, and featurizing spikes ("peeling")</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb last">
+      <a href="../toolkit_api/#dartsort.match">match</a>
+  </span>
+
+            </li>
+            <li class="doc doc-backlink">
+                  <span class="doc doc-backlink-crumb">
+      <span>User documentation</span>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#toolkit-documentation">Toolkit documentation</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#template-waveform-estimation">Template waveform estimation</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb last">
+      <a href="../toolkit_api/#dartsort.estimate_template_library">estimate_template_library</a>
+  </span>
+
+            </li>
+        </ul>
+  </div>
+
 
 
 
@@ -2754,7 +2979,7 @@ which you can access like <code>sorting.point_source_localizations[...]</code>.<
 
 
 <a href="#dartsort.DARTsortSorting.__init__" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">__init__</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">times_samples</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">channels</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">labels</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span> <span class="o">|</span> <span class="kc">None</span><span class="p">,</span> <span class="n">parent_h5_path</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sampling_frequency</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">30000.0</span><span class="p">,</span> <span class="n">persistent_features</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#dict">dict</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">ephemeral_features</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#dict">dict</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">__init__</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">times_samples</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">channels</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">labels</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span> <span class="o">|</span> <span class="kc">None</span><span class="p">,</span> <span class="n">parent_h5_path</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;pathlib.Path&lt;/code&gt;" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sampling_frequency</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">30000.0</span><span class="p">,</span> <span class="n">persistent_features</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#dict">dict</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">ephemeral_features</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#dict">dict</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2763,7 +2988,7 @@ which you can access like <code>sorting.point_source_localizations[...]</code>.<
 <p>It's more common to construct from an HDF5 file with .from_peeling_hdf5() or from
 a .npz with .load().</p>
 
-          <backlinks identifier="dartsort.DARTsortSorting.__init__" handler="python" />
+          
 
     </div>
 
@@ -2777,14 +3002,14 @@ a .npz with .load().</p>
 
 
 <a href="#dartsort.DARTsortSorting.to_numpy_sorting" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">to_numpy_sorting</span><span class="p">(</span><span class="n">drop_doubles</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">return_kept_indices</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="spikeinterface.core.NumpySorting" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.NumpySorting">NumpySorting</a></span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">to_numpy_sorting</span><span class="p">(</span><span class="n">drop_doubles</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">return_kept_indices</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;spikeinterface.core.NumpySorting&lt;/code&gt;" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.NumpySorting">NumpySorting</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Clean up and produce a spikeinterface NumpySorting object.</p>
 
-          <backlinks identifier="dartsort.DARTsortSorting.to_numpy_sorting" handler="python" />
+          
 
     </div>
 
@@ -2805,7 +3030,7 @@ a .npz with .load().</p>
 
         <p>Export to pandas DataFrame with some per-spike features.</p>
 
-          <backlinks identifier="dartsort.DARTsortSorting.to_pandas" handler="python" />
+          
 
     </div>
 
@@ -2828,7 +3053,7 @@ a .npz with .load().</p>
 <p>If there is a weight_key feature, this will produce
 a TsGroup with Tsd entries. Else, regular Ts.</p>
 
-          <backlinks identifier="dartsort.DARTsortSorting.to_tsgroup" handler="python" />
+          
 
     </div>
 
@@ -2842,7 +3067,7 @@ a TsGroup with Tsd entries. Else, regular Ts.</p>
 
 
 <a href="#dartsort.DARTsortSorting.to_sorting_analyzer" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">to_sorting_analyzer</span><span class="p">(</span><span class="n">recording</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="spikeinterface.core.BaseRecording" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.BaseRecording">BaseRecording</a></span><span class="p">,</span> <span class="n">template_data</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.TemplateData&lt;/span&gt;" href="../toolkit_api/#dartsort.TemplateData">TemplateData</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">template_cfg</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.TemplateConfig&lt;/span&gt;" href="../toolkit_api/#dartsort.TemplateConfig">TemplateConfig</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">motion</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.MotionInfo&lt;/span&gt;" href="./#dartsort.MotionInfo">MotionInfo</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">drop_doubles</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">compute_extensions</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Sequence" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence">Sequence</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'random_spikes'</span><span class="p">,</span> <span class="s1">'waveforms'</span><span class="p">,</span> <span class="s1">'correlograms'</span><span class="p">),</span> <span class="n">compute_extensions_if_templates</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Sequence" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence">Sequence</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'spike_amplitudes'</span><span class="p">,),</span> <span class="n">estimate_si_sparsity</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">compute_template_similarity</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">features_cfg</span><span class="o">=</span><span class="n"><span title="dartsort.util.internal_config.default_clustering_features_cfg">default_clustering_features_cfg</span></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="spikeinterface.core.SortingAnalyzer" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.SortingAnalyzer">SortingAnalyzer</a></span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">to_sorting_analyzer</span><span class="p">(</span><span class="n">recording</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;spikeinterface.core.BaseRecording&lt;/code&gt;" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.BaseRecording">BaseRecording</a></span><span class="p">,</span> <span class="n">template_data</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.TemplateData&lt;/span&gt; (&lt;code&gt;dartsort.templates.templates.TemplateData&lt;/code&gt;)" href="../toolkit_api/#dartsort.TemplateData">TemplateData</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">template_cfg</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.TemplateConfig&lt;/span&gt; (&lt;code&gt;dartsort.util.internal_config.TemplateConfig&lt;/code&gt;)" href="../toolkit_api/#dartsort.TemplateConfig">TemplateConfig</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">motion</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.MotionInfo&lt;/span&gt; (&lt;code&gt;dartsort.util.motion.MotionInfo&lt;/code&gt;)" href="./#dartsort.MotionInfo">MotionInfo</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">drop_doubles</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">compute_extensions</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;collections.abc.Sequence&lt;/code&gt;" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence">Sequence</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'random_spikes'</span><span class="p">,</span> <span class="s1">'waveforms'</span><span class="p">,</span> <span class="s1">'correlograms'</span><span class="p">),</span> <span class="n">compute_extensions_if_templates</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;collections.abc.Sequence&lt;/code&gt;" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence">Sequence</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'spike_amplitudes'</span><span class="p">,),</span> <span class="n">estimate_si_sparsity</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">compute_template_similarity</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">features_cfg</span><span class="o">=</span><span class="n"><span title="dartsort.util.internal_config.default_clustering_features_cfg">default_clustering_features_cfg</span></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;spikeinterface.core.SortingAnalyzer&lt;/code&gt;" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.SortingAnalyzer">SortingAnalyzer</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2875,7 +3100,7 @@ thanks to Chris Halcrow for that.</p>
                 <code>recording</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-external" title="spikeinterface.core.BaseRecording" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.BaseRecording">BaseRecording</a></code>
+                  <code><a class="autorefs autorefs-external" title="&lt;code&gt;spikeinterface.core.BaseRecording&lt;/code&gt;" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.BaseRecording">BaseRecording</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -2891,7 +3116,7 @@ thanks to Chris Halcrow for that.</p>
                 <code>template_data</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.TemplateData&lt;/span&gt;" href="../toolkit_api/#dartsort.TemplateData">TemplateData</a> | None</code>
+                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.TemplateData&lt;/span&gt; (&lt;code&gt;dartsort.templates.templates.TemplateData&lt;/code&gt;)" href="../toolkit_api/#dartsort.TemplateData">TemplateData</a> | None</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -2908,7 +3133,7 @@ extension</p>
                 <code>template_cfg</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.TemplateConfig&lt;/span&gt;" href="../toolkit_api/#dartsort.TemplateConfig">TemplateConfig</a> | None</code>
+                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.TemplateConfig&lt;/span&gt; (&lt;code&gt;dartsort.util.internal_config.TemplateConfig&lt;/code&gt;)" href="../toolkit_api/#dartsort.TemplateConfig">TemplateConfig</a> | None</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -2925,7 +3150,7 @@ templates will be estimated using dartsort machinery</p>
                 <code>motion</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.MotionInfo&lt;/span&gt;" href="./#dartsort.MotionInfo">MotionInfo</a> | None</code>
+                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.MotionInfo&lt;/span&gt; (&lt;code&gt;dartsort.util.motion.MotionInfo&lt;/code&gt;)" href="./#dartsort.MotionInfo">MotionInfo</a> | None</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -2958,7 +3183,7 @@ dedup_ms &gt; 0 in the parameters.</p>
                 <code>compute_extensions</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-external" title="collections.abc.Sequence" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence">Sequence</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a>] | None</code>
+                  <code><a class="autorefs autorefs-external" title="&lt;code&gt;collections.abc.Sequence&lt;/code&gt;" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence">Sequence</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a>] | None</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -2978,7 +3203,7 @@ cause the Phy export to fail.</p>
                 <code>features_cfg</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.ClusteringFeaturesConfig&lt;/span&gt;" href="../toolkit_api/#dartsort.ClusteringFeaturesConfig">ClusteringFeaturesConfig</a></code>
+                  <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.ClusteringFeaturesConfig&lt;/span&gt; (&lt;code&gt;dartsort.util.internal_config.ClusteringFeaturesConfig&lt;/code&gt;)" href="../toolkit_api/#dartsort.ClusteringFeaturesConfig">ClusteringFeaturesConfig</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -3004,7 +3229,7 @@ cause the Phy export to fail.</p>
       <tbody>
           <tr class="doc-section-item">
 <td><code>analyzer</code></td>            <td>
-                  <code><a class="autorefs autorefs-external" title="spikeinterface.core.SortingAnalyzer" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.SortingAnalyzer">SortingAnalyzer</a></code>
+                  <code><a class="autorefs autorefs-external" title="&lt;code&gt;spikeinterface.core.SortingAnalyzer&lt;/code&gt;" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.SortingAnalyzer">SortingAnalyzer</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -3015,7 +3240,7 @@ cause the Phy export to fail.</p>
       </tbody>
     </table>
 
-          <backlinks identifier="dartsort.DARTsortSorting.to_sorting_analyzer" handler="python" />
+          
 
     </div>
 
@@ -3029,14 +3254,14 @@ cause the Phy export to fail.</p>
 
 
 <a href="#dartsort.DARTsortSorting.copy" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">copy</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Self" href="https://docs.python.org/3/library/typing.html#typing.Self">Self</a></span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">copy</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Self&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Self">Self</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Shallow copy. Doesn't copy data, but copies references and internal state.</p>
 
-          <backlinks identifier="dartsort.DARTsortSorting.copy" handler="python" />
+          
 
     </div>
 
@@ -3050,14 +3275,14 @@ cause the Phy export to fail.</p>
 
 
 <a href="#dartsort.DARTsortSorting.ephemeral_replace" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">ephemeral_replace</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">check_shapes</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">new_features</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Self" href="https://docs.python.org/3/library/typing.html#typing.Self">Self</a></span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">ephemeral_replace</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">check_shapes</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">new_features</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Self&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Self">Self</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Return a shallow copy of self with certain datasets/features replaced by new_features.</p>
 
-          <backlinks identifier="dartsort.DARTsortSorting.ephemeral_replace" handler="python" />
+          
 
     </div>
 
@@ -3078,7 +3303,7 @@ cause the Phy export to fail.</p>
 
         <p>Are my .labels those from the hdf5 file?</p>
 
-          <backlinks identifier="dartsort.DARTsortSorting.has_persistent_labels" handler="python" />
+          
 
     </div>
 
@@ -3092,7 +3317,7 @@ cause the Phy export to fail.</p>
 
 
 <a href="#dartsort.DARTsortSorting.add_ephemeral_feature" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">add_ephemeral_feature</span><span class="p">(</span><span class="n">feature_name</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">,</span> <span class="n">feature</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">check_shape</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">add_ephemeral_feature</span><span class="p">(</span><span class="n">feature_name</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">,</span> <span class="n">feature</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">check_shape</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3100,7 +3325,7 @@ cause the Phy export to fail.</p>
         <p>Ephemeral features are accessible as properties and persisted to/from .npz,
 but not saved in the .h5.</p>
 
-          <backlinks identifier="dartsort.DARTsortSorting.add_ephemeral_feature" handler="python" />
+          
 
     </div>
 
@@ -3114,14 +3339,14 @@ but not saved in the .h5.</p>
 
 
 <a href="#dartsort.DARTsortSorting.add_feature" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">add_feature</span><span class="p">(</span><span class="n">feature_name</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">,</span> <span class="n">feature</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">check_shape</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">add_feature</span><span class="p">(</span><span class="n">feature_name</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">,</span> <span class="n">feature</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">check_shape</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Try to save a feature to h5, else register as ephemeral.</p>
 
-          <backlinks identifier="dartsort.DARTsortSorting.add_feature" handler="python" />
+          
 
     </div>
 
@@ -3139,7 +3364,7 @@ but not saved in the .h5.</p>
   </span>
 
 <a href="#dartsort.DARTsortSorting.from_peeling_hdf5" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">from_peeling_hdf5</span><span class="p">(</span><span class="n">h5_path</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">times_samples_dataset</span><span class="o">=</span><span class="s1">'times_samples'</span><span class="p">,</span> <span class="n">channels_dataset</span><span class="o">=</span><span class="s1">'channels'</span><span class="p">,</span> <span class="n">labels_dataset</span><span class="o">=</span><span class="s1">'labels'</span><span class="p">,</span> <span class="n">load_feature_names</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Sequence" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence">Sequence</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">load_simple_features</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">load_all_features</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">allow_missing</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Self" href="https://docs.python.org/3/library/typing.html#typing.Self">Self</a></span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">from_peeling_hdf5</span><span class="p">(</span><span class="n">h5_path</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;pathlib.Path&lt;/code&gt;" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">times_samples_dataset</span><span class="o">=</span><span class="s1">'times_samples'</span><span class="p">,</span> <span class="n">channels_dataset</span><span class="o">=</span><span class="s1">'channels'</span><span class="p">,</span> <span class="n">labels_dataset</span><span class="o">=</span><span class="s1">'labels'</span><span class="p">,</span> <span class="n">load_feature_names</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;collections.abc.Sequence&lt;/code&gt;" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence">Sequence</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">load_simple_features</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">load_all_features</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">allow_missing</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Self&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Self">Self</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3211,7 +3436,7 @@ or multi-channel PCA features.</p>
       </tbody>
     </table>
 
-          <backlinks identifier="dartsort.DARTsortSorting.from_peeling_hdf5" handler="python" />
+          
 
     </div>
 
@@ -3225,7 +3450,7 @@ or multi-channel PCA features.</p>
 
 
 <a href="#dartsort.DARTsortSorting.save" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">save</span><span class="p">(</span><span class="n">sorting_npz</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></span><span class="p">,</span> <span class="n">save_h5_path</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">pack_simple_features</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">pack_extra_features</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="collections.abc.Sequence" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence">Sequence</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">save</span><span class="p">(</span><span class="n">sorting_npz</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;pathlib.Path&lt;/code&gt;" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></span><span class="p">,</span> <span class="n">save_h5_path</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">pack_simple_features</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">pack_extra_features</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;collections.abc.Sequence&lt;/code&gt;" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence">Sequence</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3255,7 +3480,7 @@ to the .h5 file if it exists.</p>
                 <code>sorting_npz</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a> | <a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></code>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a> | <a class="autorefs autorefs-external" title="&lt;code&gt;pathlib.Path&lt;/code&gt;" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -3304,7 +3529,7 @@ in the npz.</p>
                 <code>pack_extra_features</code>
             </td>
             <td>
-                  <code><a class="autorefs autorefs-external" title="collections.abc.Sequence" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence">Sequence</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a>] | None</code>
+                  <code><a class="autorefs autorefs-external" title="&lt;code&gt;collections.abc.Sequence&lt;/code&gt;" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence">Sequence</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a>] | None</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -3318,7 +3543,7 @@ in the npz.</p>
       </tbody>
     </table>
 
-          <backlinks identifier="dartsort.DARTsortSorting.save" handler="python" />
+          
 
     </div>
 
@@ -3336,14 +3561,14 @@ in the npz.</p>
   </span>
 
 <a href="#dartsort.DARTsortSorting.load" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">load</span><span class="p">(</span><span class="n">sorting_npz</span><span class="p">,</span> <span class="n">additional_persistent_features</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">load_ephemeral_feature_names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">load_persistent_feature_names</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Self" href="https://docs.python.org/3/library/typing.html#typing.Self">Self</a></span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">load</span><span class="p">(</span><span class="n">sorting_npz</span><span class="p">,</span> <span class="n">additional_persistent_features</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">load_ephemeral_feature_names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">load_persistent_feature_names</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Self&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Self">Self</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Load from npz (usually dartsort_sorting.npz).</p>
 
-          <backlinks identifier="dartsort.DARTsortSorting.load" handler="python" />
+          
 
     </div>
 
@@ -3357,14 +3582,14 @@ in the npz.</p>
 
 
 <a href="#dartsort.DARTsortSorting.drop_missing" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">drop_missing</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Self" href="https://docs.python.org/3/library/typing.html#typing.Self">Self</a></span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">drop_missing</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Self&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Self">Self</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Remove spikes with -1 labels.</p>
 
-          <backlinks identifier="dartsort.DARTsortSorting.drop_missing" handler="python" />
+          
 
     </div>
 
@@ -3385,7 +3610,7 @@ in the npz.</p>
 
         <p>Remove spikes detected at the exact same time assigned to the same unit.</p>
 
-          <backlinks identifier="dartsort.DARTsortSorting.drop_doubles" handler="python" />
+          
 
     </div>
 
@@ -3399,14 +3624,14 @@ in the npz.</p>
 
 
 <a href="#dartsort.DARTsortSorting.flatten" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">flatten</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">include_gmm_properties</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">in_place</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Self" href="https://docs.python.org/3/library/typing.html#typing.Self">Self</a></span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">flatten</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">include_gmm_properties</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">in_place</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Self&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Self">Self</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Flatten the unit IDs so that there are no gaps in the sorted unique label set.</p>
 
-          <backlinks identifier="dartsort.DARTsortSorting.flatten" handler="python" />
+          
 
     </div>
 
@@ -3420,7 +3645,7 @@ in the npz.</p>
 
 
 <a href="#dartsort.DARTsortSorting.remap_gmm_properties" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">remap_gmm_properties</span><span class="p">(</span><span class="n">remap</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">new_K</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#int">int</a></span><span class="p">,</span> <span class="n">in_place</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span><span class="p">,</span> <span class="n">prefixes</span><span class="o">=</span><span class="p">(</span><span class="s1">'merged'</span><span class="p">,</span> <span class="s1">'gmm'</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#dict">dict</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">]</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">remap_gmm_properties</span><span class="p">(</span><span class="n">remap</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">new_K</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#int">int</a></span><span class="p">,</span> <span class="n">in_place</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span><span class="p">,</span> <span class="n">prefixes</span><span class="o">=</span><span class="p">(</span><span class="s1">'merged'</span><span class="p">,</span> <span class="s1">'gmm'</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#dict">dict</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">]</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3430,7 +3655,7 @@ in the npz.</p>
 top candidates but still exist in the lower ranks -- have their
 probability added to the noise component.</p>
 
-          <backlinks identifier="dartsort.DARTsortSorting.remap_gmm_properties" handler="python" />
+          
 
     </div>
 
@@ -3461,7 +3686,90 @@ probability added to the noise component.</p>
 
         <p>Holds motion-related info and helper functions.</p>
 
-          <backlinks identifier="dartsort.MotionInfo" handler="python" />
+          
+
+
+  <div class="doc doc-backlinks">
+        <b class="doc doc-backlink-type">Returned by:</b>
+        <ul class="doc doc-backlink-list">
+        </ul>
+        <b class="doc doc-backlink-type">Used by:</b>
+        <ul class="doc doc-backlink-list">
+            <li class="doc doc-backlink">
+                  <span class="doc doc-backlink-crumb">
+      <span>User documentation</span>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="./#main-api-dartsort-and-the-dartsortuserconfig">Main API: dartsort() and the DARTsortUserConfig</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="./#main-function-dartsort">Main function: dartsort()</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb last">
+      <a href="./#dartsort.dartsort">dartsort</a>
+  </span>
+
+            </li>
+            <li class="doc doc-backlink">
+                  <span class="doc doc-backlink-crumb">
+      <span>User documentation</span>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#toolkit-documentation">Toolkit documentation</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#clustering">Clustering</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb last">
+      <a href="../toolkit_api/#dartsort.cluster">cluster</a>
+  </span>
+
+            </li>
+            <li class="doc doc-backlink">
+                  <span class="doc doc-backlink-crumb">
+      <span>User documentation</span>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#toolkit-documentation">Toolkit documentation</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#detecting-cleaning-and-featurizing-spikes-peeling">Detecting, cleaning, and featurizing spikes ("peeling")</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb last">
+      <a href="../toolkit_api/#dartsort.match">match</a>
+  </span>
+
+            </li>
+            <li class="doc doc-backlink">
+                  <span class="doc doc-backlink-crumb">
+      <span>User documentation</span>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#toolkit-documentation">Toolkit documentation</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb">
+      <a href="../toolkit_api/#template-waveform-estimation">Template waveform estimation</a>
+  </span>
+
+                  <span class="doc doc-backlink-crumb last">
+      <a href="../toolkit_api/#dartsort.estimate_template_library">estimate_template_library</a>
+  </span>
+
+            </li>
+        </ul>
+  </div>
+
 
 
 
@@ -3500,7 +3808,7 @@ probability added to the noise component.</p>
 
         <p>Was do_motion_estimation set, or are we ignoring motion?</p>
 
-          <backlinks identifier="dartsort.MotionInfo.drifting" handler="python" />
+          
     </div>
 
 </div>
@@ -3518,14 +3826,14 @@ probability added to the noise component.</p>
   </span>
 
 <a href="#dartsort.MotionInfo.geom" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">geom</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">geom</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>The recording's <code>get_channel_locations()</code> array.</p>
 
-          <backlinks identifier="dartsort.MotionInfo.geom" handler="python" />
+          
     </div>
 
 </div>
@@ -3543,14 +3851,14 @@ probability added to the noise component.</p>
   </span>
 
 <a href="#dartsort.MotionInfo.rgeom" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">rgeom</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">rgeom</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>The extended "registered geometry" array</p>
 
-          <backlinks identifier="dartsort.MotionInfo.rgeom" handler="python" />
+          
     </div>
 
 </div>
@@ -3575,7 +3883,7 @@ probability added to the noise component.</p>
 
         <p>Motion estimate from DREDge, if using.</p>
 
-          <backlinks identifier="dartsort.MotionInfo.dredge_motion_est" handler="python" />
+          
     </div>
 
 </div>
@@ -3593,14 +3901,14 @@ probability added to the noise component.</p>
   </span>
 
 <a href="#dartsort.MotionInfo.si_motion" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">si_motion</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="spikeinterface.core.Motion" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.Motion">Motion</a></span> <span class="o">|</span> <span class="kc">None</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">si_motion</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;spikeinterface.core.Motion&lt;/code&gt;" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.Motion">Motion</a></span> <span class="o">|</span> <span class="kc">None</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Motion estimate from SpikeInterface, if using.</p>
 
-          <backlinks identifier="dartsort.MotionInfo.si_motion" handler="python" />
+          
     </div>
 
 </div>
@@ -3625,7 +3933,7 @@ probability added to the noise component.</p>
 
         <p>k-d tree for querying original geometry.</p>
 
-          <backlinks identifier="dartsort.MotionInfo.geom_kdt" handler="python" />
+          
     </div>
 
 </div>
@@ -3650,7 +3958,7 @@ probability added to the noise component.</p>
 
         <p>k-d tree for querying registered geometry.</p>
 
-          <backlinks identifier="dartsort.MotionInfo.rgeom_kdt" handler="python" />
+          
     </div>
 
 </div>
@@ -3675,7 +3983,7 @@ probability added to the noise component.</p>
 
         <p>k-d tree query bound.</p>
 
-          <backlinks identifier="dartsort.MotionInfo.min_dist" handler="python" />
+          
     </div>
 
 </div>
@@ -3700,7 +4008,7 @@ probability added to the noise component.</p>
 
         <p>Vertical probe geometry period.</p>
 
-          <backlinks identifier="dartsort.MotionInfo.pitch" handler="python" />
+          
     </div>
 
 </div>
@@ -3720,7 +4028,7 @@ probability added to the noise component.</p>
   </span>
 
 <a href="#dartsort.MotionInfo.from_motion_est" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">from_motion_est</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">geom</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span> <span class="o">|</span> <span class="n"><span title="torch.Tensor">Tensor</span></span><span class="p">,</span> <span class="n">dredge_motion_est</span><span class="p">:</span> <span class="n"><span title="dredge.motion_util.MotionEstimate">MotionEstimate</span></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">si_motion</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="spikeinterface.core.Motion" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.Motion">Motion</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">rgeom</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span> <span class="o">|</span> <span class="n"><span title="torch.Tensor">Tensor</span></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Self" href="https://docs.python.org/3/library/typing.html#typing.Self">Self</a></span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">from_motion_est</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">geom</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span> <span class="o">|</span> <span class="n"><span title="torch.Tensor">Tensor</span></span><span class="p">,</span> <span class="n">dredge_motion_est</span><span class="p">:</span> <span class="n"><span title="dredge.motion_util.MotionEstimate">MotionEstimate</span></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">si_motion</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;spikeinterface.core.Motion&lt;/code&gt;" href="https://spikeinterface.readthedocs.io/en/stable/api.html#spikeinterface.core.Motion">Motion</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">rgeom</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span> <span class="o">|</span> <span class="n"><span title="torch.Tensor">Tensor</span></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Self&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Self">Self</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3732,7 +4040,7 @@ and the "registered geometry". Also, k-d trees which are used everywhere.</p>
 <p>If neither dredge_motion_est nor si_motion is supplied, drifting is set
 to False and there is assumed to be no motion.</p>
 
-          <backlinks identifier="dartsort.MotionInfo.from_motion_est" handler="python" />
+          
 
     </div>
 
@@ -3750,14 +4058,14 @@ to False and there is assumed to be no motion.</p>
   </span>
 
 <a href="#dartsort.MotionInfo.static" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">static</span><span class="p">(</span><span class="n">geom</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Self" href="https://docs.python.org/3/library/typing.html#typing.Self">Self</a></span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">static</span><span class="p">(</span><span class="n">geom</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Self&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Self">Self</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Make an 'all-zero' MotionInfo.</p>
 
-          <backlinks identifier="dartsort.MotionInfo.static" handler="python" />
+          
 
     </div>
 
@@ -3771,14 +4079,14 @@ to False and there is assumed to be no motion.</p>
 
 
 <a href="#dartsort.MotionInfo.uncorrect_s" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">uncorrect_s</span><span class="p">(</span><span class="n">times_s</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">reg_depths_um</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">uncorrect_s</span><span class="p">(</span><span class="n">times_s</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">|</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n">reg_depths_um</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
 
         <p>Attempt to invert the motion estimate to un-register reg_depths_um.</p>
 
-          <backlinks identifier="dartsort.MotionInfo.uncorrect_s" handler="python" />
+          
 
     </div>
 
@@ -3792,7 +4100,7 @@ to False and there is assumed to be no motion.</p>
 
 
 <a href="#dartsort.MotionInfo.pitch_shifts" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">pitch_shifts</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">sorting</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.DARTsortSorting&lt;/span&gt;" href="./#dartsort.DARTsortSorting">DARTsortSorting</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">times_s</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">depths_um</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">reg_depths_um</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">shift_mode</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Literal" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'round'</span><span class="p">,</span> <span class="s1">'floor'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'round'</span><span class="p">,</span> <span class="n">motion_depth_mode</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Literal" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'channel'</span><span class="p">,</span> <span class="s1">'localization'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'channel'</span><span class="p">,</span> <span class="n">localizations_dset</span><span class="o">=</span><span class="s1">'point_source_localizations'</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#tuple">tuple</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="numpy.ndarray" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">]</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">pitch_shifts</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">sorting</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.DARTsortSorting&lt;/span&gt; (&lt;code&gt;dartsort.util.data_util.DARTsortSorting&lt;/code&gt;)" href="./#dartsort.DARTsortSorting">DARTsortSorting</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">times_s</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">depths_um</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">reg_depths_um</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">shift_mode</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Literal&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'round'</span><span class="p">,</span> <span class="s1">'floor'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'round'</span><span class="p">,</span> <span class="n">motion_depth_mode</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Literal&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'channel'</span><span class="p">,</span> <span class="s1">'localization'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'channel'</span><span class="p">,</span> <span class="n">localizations_dset</span><span class="o">=</span><span class="s1">'point_source_localizations'</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#tuple">tuple</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;numpy.ndarray&lt;/code&gt;" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray">ndarray</a></span><span class="p">]</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3801,7 +4109,7 @@ to False and there is assumed to be no motion.</p>
 <p>Determine the number of pitches the probe would need to shift in
 order to coarsely align a waveform to its registered position.</p>
 
-          <backlinks identifier="dartsort.MotionInfo.pitch_shifts" handler="python" />
+          
 
     </div>
 
@@ -3944,7 +4252,7 @@ order to coarsely align a waveform to its registered position.</p>
       <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight","navigation.collapsible"],"redirect":null,"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../assets/javascripts/bundle.c04ba553.min.js"></script>
+      <script src="../assets/javascripts/bundle.b7d3f789.min.js"></script>
       
     
   </body>
