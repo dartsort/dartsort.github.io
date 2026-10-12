@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.0.68">
+      <meta name="generator" content="zensical-0.0.69">
     
     
       
@@ -32,7 +32,7 @@
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/modern/main.595f2bf5.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.e15858d4.min.css">
       
         
           
@@ -2074,7 +2074,7 @@ These are in sections below.</p>
   </span>
 
 <a href="#dartsort.SubtractionConfig.detection_proposal" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">detection_proposal</span><span class="p">:</span> <span class="n"><span title="dartsort.util.internal_config.DetectionProposal">DetectionProposal</span></span> <span class="o">=</span> <span class="s1">'voltage'</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">detection_proposal</span><span class="p">:</span> <span class="n"><span title="dartsort.util.internal_config.DetectionProposal">DetectionProposal</span></span> <span class="o">=</span> <span class="s1">'tpca'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -2674,7 +2674,7 @@ These are in sections below.</p>
   </span>
 
 <a href="#dartsort.SubtractionConfig.subtraction_denoising_cfg" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">subtraction_denoising_cfg</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.FeaturizationConfig&lt;/span&gt; (&lt;code&gt;dartsort.util.internal_config.FeaturizationConfig&lt;/code&gt;)" href="./#dartsort.FeaturizationConfig">FeaturizationConfig</a></span> <span class="o">=</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.FeaturizationConfig&lt;/span&gt; (&lt;code&gt;dartsort.util.internal_config.FeaturizationConfig&lt;/code&gt;)" href="./#dartsort.FeaturizationConfig">FeaturizationConfig</a></span><span class="p">(</span><span class="n"><span title="dartsort.util.internal_config.FeaturizationConfig(denoise_only)">denoise_only</span></span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n"><span title="dartsort.util.internal_config.FeaturizationConfig(do_nn_denoise)">do_nn_denoise</span></span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n"><span title="dartsort.util.internal_config.FeaturizationConfig(tpca_denoise_fit)">tpca_denoise_fit</span></span><span class="o">=</span><span class="s1">'during_nn_training'</span><span class="p">,</span> <span class="n"><span title="dartsort.util.internal_config.FeaturizationConfig(extract_radius)">extract_radius</span></span><span class="o">=</span><span class="mf">200.0</span><span class="p">,</span> <span class="n"><span title="dartsort.util.internal_config.FeaturizationConfig(input_waveforms_name)">input_waveforms_name</span></span><span class="o">=</span><span class="s1">'raw'</span><span class="p">,</span> <span class="n"><span title="dartsort.util.internal_config.FeaturizationConfig(output_waveforms_name)">output_waveforms_name</span></span><span class="o">=</span><span class="s1">'subtracted'</span><span class="p">)</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">subtraction_denoising_cfg</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.FeaturizationConfig&lt;/span&gt; (&lt;code&gt;dartsort.util.internal_config.FeaturizationConfig&lt;/code&gt;)" href="./#dartsort.FeaturizationConfig">FeaturizationConfig</a></span> <span class="o">=</span> <span class="n"><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;dartsort.FeaturizationConfig&lt;/span&gt; (&lt;code&gt;dartsort.util.internal_config.FeaturizationConfig&lt;/code&gt;)" href="./#dartsort.FeaturizationConfig">FeaturizationConfig</a></span><span class="p">(</span><span class="n"><span title="dartsort.util.internal_config.FeaturizationConfig(denoise_only)">denoise_only</span></span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n"><span title="dartsort.util.internal_config.FeaturizationConfig(do_nn_denoise)">do_nn_denoise</span></span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n"><span title="dartsort.util.internal_config.FeaturizationConfig(tpca_denoise_fit)">tpca_denoise_fit</span></span><span class="o">=</span><span class="s1">'peeling'</span><span class="p">,</span> <span class="n"><span title="dartsort.util.internal_config.FeaturizationConfig(extract_radius)">extract_radius</span></span><span class="o">=</span><span class="mf">200.0</span><span class="p">,</span> <span class="n"><span title="dartsort.util.internal_config.FeaturizationConfig(input_waveforms_name)">input_waveforms_name</span></span><span class="o">=</span><span class="s1">'raw'</span><span class="p">,</span> <span class="n"><span title="dartsort.util.internal_config.FeaturizationConfig(output_waveforms_name)">output_waveforms_name</span></span><span class="o">=</span><span class="s1">'subtracted'</span><span class="p">)</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -9109,6 +9109,78 @@ dec_wfs, dec_ptps = enfdec(waveforms, maxchans)</p>
 
 
 
+<h4 id="dartsort.RefinementConfig.kmeanspp_sampling" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">kmeanspp_sampling</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+<a href="#dartsort.RefinementConfig.kmeanspp_sampling" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">kmeanspp_sampling</span><span class="p">:</span> <span class="n"><span title="dartsort.util.internal_config.KmeansppSampling">KmeansppSampling</span></span> <span class="o">=</span> <span class="s1">'d2'</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+          
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="dartsort.RefinementConfig.kmeanspp_alpha" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">kmeanspp_alpha</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+<a href="#dartsort.RefinementConfig.kmeanspp_alpha" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">kmeanspp_alpha</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">2.0</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+          
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="dartsort.RefinementConfig.kmeanspp_z0" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">kmeanspp_z0</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+<a href="#dartsort.RefinementConfig.kmeanspp_z0" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">kmeanspp_z0</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">3.0</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+          
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
 <h4 id="dartsort.RefinementConfig.full_proposal_every" class="doc doc-heading">
             <span class="doc doc-object-name doc-attribute-name">full_proposal_every</span>
 
@@ -9517,174 +9589,6 @@ dec_wfs, dec_ptps = enfdec(waveforms, maxchans)</p>
 
 
 
-<h4 id="dartsort.RefinementConfig.glom_qda_overlap" class="doc doc-heading">
-            <span class="doc doc-object-name doc-attribute-name">glom_qda_overlap</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#dartsort.RefinementConfig.glom_qda_overlap" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">glom_qda_overlap</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span>
-</span></code></pre></div>
-
-    <div class="doc doc-contents ">
-
-          
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="dartsort.RefinementConfig.glom_qda_bimodality" class="doc doc-heading">
-            <span class="doc doc-object-name doc-attribute-name">glom_qda_bimodality</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#dartsort.RefinementConfig.glom_qda_bimodality" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">glom_qda_bimodality</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></span> <span class="o">=</span> <span class="kc">False</span>
-</span></code></pre></div>
-
-    <div class="doc doc-contents ">
-
-          
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="dartsort.RefinementConfig.qda_uni_score" class="doc doc-heading">
-            <span class="doc doc-object-name doc-attribute-name">qda_uni_score</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#dartsort.RefinementConfig.qda_uni_score" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">qda_uni_score</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.95</span>
-</span></code></pre></div>
-
-    <div class="doc doc-contents ">
-
-          
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="dartsort.RefinementConfig.qda_threshold" class="doc doc-heading">
-            <span class="doc doc-object-name doc-attribute-name">qda_threshold</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#dartsort.RefinementConfig.qda_threshold" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">qda_threshold</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.35</span>
-</span></code></pre></div>
-
-    <div class="doc doc-contents ">
-
-          
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="dartsort.RefinementConfig.qda_min_ratio" class="doc doc-heading">
-            <span class="doc doc-object-name doc-attribute-name">qda_min_ratio</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#dartsort.RefinementConfig.qda_min_ratio" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">qda_min_ratio</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.1</span>
-</span></code></pre></div>
-
-    <div class="doc doc-contents ">
-
-          
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="dartsort.RefinementConfig.qda_min_coverage" class="doc doc-heading">
-            <span class="doc doc-object-name doc-attribute-name">qda_min_coverage</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#dartsort.RefinementConfig.qda_min_coverage" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">qda_min_coverage</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.35</span>
-</span></code></pre></div>
-
-    <div class="doc doc-contents ">
-
-          
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="dartsort.RefinementConfig.qda_min_iou" class="doc doc-heading">
-            <span class="doc doc-object-name doc-attribute-name">qda_min_iou</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#dartsort.RefinementConfig.qda_min_iou" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">qda_min_iou</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">0.5</span>
-</span></code></pre></div>
-
-    <div class="doc doc-contents ">
-
-          
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
 <h4 id="dartsort.RefinementConfig.glom_violation_ms" class="doc doc-heading">
             <span class="doc doc-object-name doc-attribute-name">glom_violation_ms</span>
 
@@ -9743,31 +9647,7 @@ dec_wfs, dec_ptps = enfdec(waveforms, maxchans)</p>
   </span>
 
 <a href="#dartsort.RefinementConfig.glom_min_violation_evidence" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">glom_min_violation_evidence</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">4.6</span>
-</span></code></pre></div>
-
-    <div class="doc doc-contents ">
-
-          
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="dartsort.RefinementConfig.glom_violation_linkage" class="doc doc-heading">
-            <span class="doc doc-object-name doc-attribute-name">glom_violation_linkage</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#dartsort.RefinementConfig.glom_violation_linkage" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">glom_violation_linkage</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="&lt;code&gt;typing.Literal&lt;/code&gt;" href="https://docs.python.org/3/library/typing.html#typing.Literal">Literal</a></span><span class="p">[</span><span class="s1">'average'</span><span class="p">,</span> <span class="s1">'complete'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'average'</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">glom_min_violation_evidence</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">10.0</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -9816,30 +9696,6 @@ dec_wfs, dec_ptps = enfdec(waveforms, maxchans)</p>
 
 <a href="#dartsort.RefinementConfig.glom_veto_threshold" class="headerlink" title="Permanent link">&para;</a></h4>
 <div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">glom_veto_threshold</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
-</span></code></pre></div>
-
-    <div class="doc doc-contents ">
-
-          
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h4 id="dartsort.RefinementConfig.glom_veto_min_evidence" class="doc doc-heading">
-            <span class="doc doc-object-name doc-attribute-name">glom_veto_min_evidence</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
-      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
-  </span>
-
-<a href="#dartsort.RefinementConfig.glom_veto_min_evidence" class="headerlink" title="Permanent link">&para;</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">glom_veto_min_evidence</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#float">float</a></span> <span class="o">=</span> <span class="mf">10.0</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -11884,7 +11740,7 @@ dec_wfs, dec_ptps = enfdec(waveforms, maxchans)</p>
       <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight","navigation.collapsible"],"redirect":null,"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../assets/javascripts/bundle.3c842f4c.min.js"></script>
+      <script src="../assets/javascripts/bundle.8b1c90bd.min.js"></script>
       
     
   </body>
